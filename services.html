@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Services — Pandurang Auto Industries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pandurang Auto Industries serves 8 industry sectors with precision CNC & VMC machined components — Automobile, Hydraulic, Pump & Valve, Electronic, Industrial, Oil & Gas, Energy & Power, and more.">
+    <link rel="canonical" href="https://www.pandurangautoindustries.in/services.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+/* ── Variables ── */
+:root {
+    --primary: #1B3A6B;
+    --primary-light: #2A5298;
+    --dark: #0d1f3c;
+    --text: #374151;
+    --muted: #6B7280;
+    --border: #E8EDF5;
+    --bg-light: #F7F9FC;
+    --accent: #93C5FD;
+}
+*, body { font-family: 'Geist', sans-serif; }
+body { color: var(--text); background: #fff; }
+
+/* ── Shared: Topbar ── */
+.topbar-strip { background: #0d1f3c; font-size: 0.76rem; padding: 7px 0; }
+.topbar-strip a { color: rgba(255,255,255,.7); text-decoration: none; transition: .2s; }
+.topbar-strip a:hover { color: #fff; }
+
+/* ── Shared: Nav ── */
+.site-nav { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 1px 0 var(--border); transition: box-shadow .3s; }
+.site-nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
+.site-nav .navbar-brand-wrapper { background: var(--primary); padding: 14px 28px 14px 24px; clip-path: polygon(0 0,calc(100% - 14px) 0,100% 100%,0 100%); margin-right: 16px; }
+.site-nav .navbar-brand-text { font-weight: 800; font-size: 1.35rem; color: #fff; letter-spacing: -0.02em; line-height: 1; }
+.site-nav .navbar-brand-text span { color: var(--accent); }
+.site-nav .nav-link { font-size: .88rem; font-weight: 500; color: var(--dark) !important; padding: 24px 15px !important; position: relative; transition: color .2s; }
+.site-nav .nav-link::after { content: ''; position: absolute; bottom: 14px; left: 15px; right: 15px; height: 2px; background: var(--primary); transform: scaleX(0); transition: transform .25s; border-radius: 2px; }
+.site-nav .nav-link:hover::after, .site-nav .nav-link.active::after { transform: scaleX(1); }
+.site-nav .nav-link:hover { color: var(--primary) !important; }
+.site-nav .btn-quote { background: var(--primary); color: #fff; font-size: .83rem; font-weight: 700; padding: 10px 24px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, transform .2s; white-space: nowrap; border: none; }
+.site-nav .btn-quote:hover { background: var(--primary-light); transform: translateY(-1px); color: #fff; }
+.site-nav .navbar-toggler { border-color: #ccc; }
+@media (max-width: 991px) {
+    .site-nav .nav-link { padding: 12px 16px !important; }
+    .site-nav .nav-link::after { display: none; }
+}
+
+/* ── Page Hero ── */
+.page-hero { background: #fff; border-bottom: 1px solid var(--border); padding: 56px 0 48px; position: relative; overflow: hidden; }
+.page-hero::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 40%; background: linear-gradient(to right, transparent, #F0F5FF); pointer-events: none; }
+.page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #EEF4FF; border: 1px solid #C7D9F7; color: var(--primary); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 16px; }
+.page-hero h1 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; color: var(--dark); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px; }
+.page-hero-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 560px; }
+.breadcrumb { background: none; padding: 0; margin: 16px 0 0; }
+.breadcrumb-item a { color: var(--primary); text-decoration: none; font-size: .82rem; }
+.breadcrumb-item.active { color: var(--muted); font-size: .82rem; }
+.breadcrumb-item + .breadcrumb-item::before { color: #CBD5E1; }
+
+/* ── Section Labels ── */
+.sec-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 10px; }
+.sec-h2 { font-size: clamp(1.7rem, 2.8vw, 2.3rem); font-weight: 800; color: var(--dark); letter-spacing: -0.025em; line-height: 1.2; margin-bottom: 14px; }
+.sec-rule { width: 44px; height: 4px; background: var(--primary); border-radius: 2px; margin-bottom: 24px; }
+
+/* ── Buttons ── */
+.btn-pai { background: var(--primary); color: #fff; font-weight: 700; font-size: .88rem; letter-spacing: .04em; padding: 13px 32px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, transform .2s, box-shadow .2s; border: none; }
+.btn-pai:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(27,58,107,.3); color: #fff; }
+.btn-pai-outline { background: transparent; color: var(--primary); border: 1.5px solid var(--primary); font-weight: 600; font-size: .88rem; padding: 12px 28px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, color .2s, transform .2s; }
+.btn-pai-outline:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+
+/* ── Sectors Nav ── */
+.sectors-nav { background: var(--bg-light); border-bottom: 1px solid var(--border); padding: 0; position: sticky; top: 70px; z-index: 100; overflow-x: auto; white-space: nowrap; }
+.sectors-nav-inner { display: flex; align-items: center; }
+.sn-link { display: inline-block; padding: 14px 18px; font-size: .8rem; font-weight: 600; color: var(--muted); text-decoration: none; transition: color .2s, border-bottom-color .2s; border-bottom: 2px solid transparent; white-space: nowrap; }
+.sn-link:hover, .sn-link.active { color: var(--primary); border-bottom-color: var(--primary); }
+
+/* ── Intro Section ── */
+.intro-section { padding: 96px 0; background: #fff; }
+.badge-pill { display: inline-flex; align-items: center; gap: 8px; background: #EEF4FF; border: 1px solid #C7D9F7; color: var(--primary); font-size: .8rem; font-weight: 600; padding: 8px 18px; border-radius: 100px; }
+.badge-pill i { font-size: .85rem; }
+
+/* ── Sector Sections ── */
+.sector-section { padding: 80px 0; border-bottom: 1px solid var(--border); }
+.sector-section:nth-child(even) { background: var(--bg-light); }
+.sector-section:nth-child(odd) { background: #fff; }
+.sector-num { font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 8px; opacity: .7; }
+.sector-title { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 800; color: var(--dark); letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 16px; }
+.sector-body { color: var(--text); font-size: .95rem; line-height: 1.85; margin-bottom: 12px; }
+.sector-icon-wrap { width: 56px; height: 56px; background: #EEF4FF; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.sector-icon-wrap i { color: var(--primary); font-size: 1.4rem; }
+.apps-label { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--dark); margin-bottom: 12px; }
+.apps-list { list-style: none; padding: 0; margin: 0 0 28px; }
+.apps-list li { display: flex; align-items: center; gap: 10px; font-size: .88rem; color: var(--text); margin-bottom: 9px; }
+.apps-list li i { color: var(--primary); font-size: .8rem; flex-shrink: 0; }
+.sector-img-wrap { border-radius: 16px; overflow: hidden; box-shadow: 0 16px 48px rgba(27,58,107,.1); }
+.sector-img-wrap img { width: 100%; height: 380px; object-fit: cover; display: block; transition: transform .6s ease; }
+.sector-img-wrap:hover img { transform: scale(1.04); }
+
+/* ── Materials Section ── */
+.materials-section { padding: 80px 0; background: var(--bg-light); border-bottom: 1px solid var(--border); }
+.mat-pill { display: inline-flex; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--border); color: var(--dark); padding: 12px 22px; border-radius: 100px; font-size: .88rem; font-weight: 600; transition: border-color .25s, box-shadow .25s, transform .25s; cursor: default; }
+.mat-pill:hover { border-color: var(--primary); box-shadow: 0 4px 16px rgba(27,58,107,.12); transform: translateY(-3px); }
+.mat-pill i { color: var(--primary); font-size: .65rem; }
+
+/* ── CTA Section ── */
+.cta-section { padding: 96px 0; background: linear-gradient(135deg, #0d1f3c 0%, #1B3A6B 100%); position: relative; overflow: hidden; }
+.cta-section::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+.cta-heading { font-size: clamp(1.8rem,3.5vw,3rem); font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 16px; }
+.cta-sub { color: rgba(255,255,255,.65); font-size: 1rem; line-height: 1.75; margin-bottom: 36px; }
+.cta-btn-white { background: #fff; color: var(--primary); font-weight: 700; font-size: .88rem; letter-spacing: .04em; padding: 14px 36px; border-radius: 4px; border: none; text-decoration: none; display: inline-block; transition: transform .2s, box-shadow .2s; }
+.cta-btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); color: var(--primary); }
+.cta-btn-outline { background: transparent; color: #fff; font-weight: 600; font-size: .88rem; padding: 14px 36px; border-radius: 4px; border: 1px solid rgba(255,255,255,.35); text-decoration: none; display: inline-block; transition: background .2s, transform .2s; }
+.cta-btn-outline:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); color: #fff; transform: translateY(-2px); }
+.cta-info-card { background: rgba(255,255,255,.07); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 32px; }
+.cta-info-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 20px; }
+.cta-info-row:last-child { margin-bottom: 0; }
+.cta-info-icon { width: 40px; height: 40px; flex-shrink: 0; background: rgba(255,255,255,.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.cta-info-icon i { color: var(--accent); font-size: 1rem; }
+.cta-info-label { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 3px; }
+.cta-info-value { font-size: .88rem; font-weight: 600; color: rgba(255,255,255,.85); line-height: 1.5; }
+.cta-info-value a { color: rgba(255,255,255,.85); text-decoration: none; }
+.cta-info-value a:hover { color: #fff; }
+
+/* ── Footer ── */
+.site-footer { background: #070f1e; padding: 72px 0 0; color: rgba(255,255,255,.6); font-size: .87rem; }
+.footer-brand-text { font-weight: 800; font-size: 1.4rem; color: #fff; letter-spacing: -0.02em; margin-bottom: 16px; display: block; }
+.footer-brand-text span { color: var(--accent); }
+.footer-heading { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 18px; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: rgba(255,255,255,.55); text-decoration: none; transition: color .2s, padding-left .2s; font-size: .88rem; }
+.footer-links a:hover { color: #fff; padding-left: 4px; }
+.footer-contact-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.footer-contact-row i { color: var(--accent); margin-top: 3px; flex-shrink: 0; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.06); margin-top: 56px; padding: 20px 0; font-size: .76rem; color: rgba(255,255,255,.25); text-align: center; }
+.footer-bottom a { color: rgba(255,255,255,.25); text-decoration: none; }
+
+/* ── Back to Top ── */
+.back-to-top { position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px; background: var(--primary); color: #fff; border: none; border-radius: 50%; display: none; align-items: center; justify-content: center; font-size: 1rem; box-shadow: 0 4px 16px rgba(27,58,107,.4); z-index: 999; transition: background .2s, transform .2s; text-decoration: none; }
+.back-to-top:hover { background: var(--primary-light); transform: translateY(-2px); color: #fff; }
+.back-to-top.show { display: flex; }
+
+@media (max-width: 991px) {
+    .intro-section, .sector-section, .materials-section { padding: 56px 0; }
+    .sector-img-wrap img { height: 280px; }
+    .sectors-nav { top: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar-strip d-none d-lg-block">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <span class="text-white" style="opacity:.7;"><i class="bi bi-geo-alt-fill me-1" style="color:#93C5FD;"></i>MIDC Chinchwad, Pune 411019</span>
+                <span class="text-white" style="opacity:.7;"><i class="bi bi-clock-fill me-1" style="color:#93C5FD;"></i>Available 24 / 7</span>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <a href="tel:+919922589835" class="text-white" style="opacity:.7;"><i class="fa fa-phone-alt me-1" style="color:#93C5FD;"></i>+91 99225 89835</a>
+                <a href="mailto:pandurangauto98@gmail.com" class="text-white" style="opacity:.7;"><i class="fa fa-envelope me-1" style="color:#93C5FD;"></i>pandurangauto98@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="site-nav navbar navbar-expand-lg py-0 pe-lg-4" id="siteNav">
+    <div class="container-fluid ps-0">
+        <a href="index.html" class="navbar-brand me-0 ps-0">
+            <div class="navbar-brand-wrapper">
+                <span class="navbar-brand-text">PAI<span>.</span></span>
+            </div>
+        </a>
+        <button class="navbar-toggler me-3 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <a href="contact.html" class="btn-quote ms-lg-4 me-lg-2 d-none d-lg-inline-block">Request a Quote</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container" style="position:relative;z-index:1;">
+        <span class="page-hero-eyebrow"><i class="bi bi-gear-fill"></i> Industries We Serve</span>
+        <h1>Precision Parts for<br>8 Industry Sectors</h1>
+        <p class="page-hero-sub">From automotive OEMs to oil &amp; gas operators — PAI delivers ISO 9001:2015 certified CNC and VMC machined components to the most demanding industries.</p>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Services</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Sector Quick Nav -->
+<div class="sectors-nav d-none d-lg-block">
+    <div class="container">
+        <div class="sectors-nav-inner">
+            <a href="#s1" class="sn-link">Automobile</a>
+            <a href="#s2" class="sn-link">Hydraulic</a>
+            <a href="#s3" class="sn-link">Pump &amp; Valve</a>
+            <a href="#s4" class="sn-link">Electronic</a>
+            <a href="#s5" class="sn-link">Industrial</a>
+            <a href="#s6" class="sn-link">Non-Automotive</a>
+            <a href="#s7" class="sn-link">Oil &amp; Gas</a>
+            <a href="#s8" class="sn-link">Energy &amp; Power</a>
+        </div>
+    </div>
+</div>
+
+<!-- Intro Section -->
+<section class="intro-section">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <span class="sec-eyebrow">Our Solutions</span>
+                <h2 class="sec-h2">Two Decades of<br>Manufacturing Expertise</h2>
+                <div class="sec-rule"></div>
+                <p style="line-height:1.85;margin-bottom:16px;">Pandurang Auto Industries brings over two decades of precision manufacturing expertise to serve a diverse range of industrial sectors. Our state-of-the-art CNC and VMC machining capabilities, combined with our ISO 9001:2015 certified quality management system, enable us to deliver components that meet the most exacting tolerances and standards.</p>
+                <p style="line-height:1.85;margin-bottom:32px;">From high-volume automotive components to specialised parts for the Oil &amp; Gas and Energy sectors, we work closely with our clients to understand their requirements and deliver solutions that drive performance and reliability across every application.</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <span class="badge-pill"><i class="bi bi-patch-check-fill"></i>ISO 9001:2015 Certified</span>
+                    <span class="badge-pill"><i class="bi bi-gear-fill"></i>8 Industry Sectors</span>
+                    <span class="badge-pill"><i class="bi bi-award-fill"></i>23+ Years Experience</span>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                <div class="sector-img-wrap">
+                    <img src="img/product-1.jpeg" alt="PAI Precision Machined Components" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Sector 1: Automobile Industries ─── -->
+<section class="sector-section" id="s1">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5" data-aos="fade-right">
+                <div class="sector-img-wrap">
+                    <img src="img/product-2.jpeg" alt="Automobile Industry Components" loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="80">
+                <div class="sector-icon-wrap"><i class="bi bi-car-front-fill"></i></div>
+                <span class="sector-num">Sector 01</span>
+                <h3 class="sector-title">Automobile Industries</h3>
+                <p class="sector-body">The automotive sector demands the highest levels of dimensional accuracy, surface finish, and material integrity. PAI has been a trusted precision machining partner for leading automobile OEMs and Tier-1 suppliers, manufacturing critical components that directly affect vehicle performance and safety.</p>
+                <p class="sector-body">Our CNC and VMC machining centres operate to tight tolerances with full traceability, ensuring every part meets stringent quality standards before it reaches the assembly line.</p>
+                <div class="apps-label">Key Applications</div>
+                <ul class="apps-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Engine components</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Transmission parts</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Suspension components</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Brake system parts</li>
+                </ul>
+                <a href="contact.html" class="btn-pai">Get a Quote <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Sector 2: Hydraulic Applications ─── -->
+<section class="sector-section" id="s2">
+    <div class="container">
+        <div class="row g-5 align-items-center flex-lg-row-reverse">
+            <div class="col-lg-5" data-aos="fade-left">
+                <div class="sector-img-wrap">
+                    <img src="img/product-4.jpeg" alt="Hydraulic Application Components" loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-right" data-aos-delay="80">
+                <div class="sector-icon-wrap"><i class="bi bi-droplet-fill"></i></div>
+                <span class="sector-num">Sector 02</span>
+                <h3 class="sector-title">Hydraulic Applications</h3>
+                <p class="sector-body">Hydraulic systems operate under immense pressure and rely on leak-free, perfectly machined interfaces to function safely and efficiently. PAI manufactures precision components for hydraulic systems used across industrial machinery, construction equipment, and mobile hydraulics.</p>
+                <p class="sector-body">Our machining processes achieve the bore tolerances and surface finishes critical for sealing performance in high-pressure hydraulic environments.</p>
+                <div class="apps-label">Key Applications</div>
+                <ul class="apps-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Hydraulic cylinders</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Valve bodies</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Pump housings</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Manifold blocks</li>
+                </ul>
+                <a href="contact.html" class="btn-pai">Get a Quote <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Sector 3: Pump & Valve ─── -->
+<section class="sector-section" id="s3">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5" data-aos="fade-right">
+                <div class="sector-img-wrap">
+                    <img src="img/product-6.jpeg" alt="Pump and Valve Industry Components" loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="80">
+                <div class="sector-icon-wrap"><i class="bi bi-sliders"></i></div>
+                <span class="sector-num">Sector 03</span>
+                <h3 class="sector-title">Pump &amp; Valve Industries</h3>
+                <p class="sector-body">Pumps and valves form the backbone of fluid handling infrastructure across water treatment, chemical processing, and industrial manufacturing. PAI supplies precision machined components to pump and valve manufacturers who demand tight tolerances, superior surface finishes, and consistent dimensional repeatability.</p>
+                <p class="sector-body">With our multi-axis CNC capabilities, we produce complex geometries required for efficient fluid flow while maintaining the material properties necessary for resistance to corrosion and wear.</p>
+                <div class="apps-label">Key Applications</div>
+                <ul class="apps-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Pump shafts</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Valve stems</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Impellers</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Seal housings</li>
+                </ul>
+                <a href="contact.html" class="btn-pai">Get a Quote <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Sector 4: Electronic Industries ─── -->
+<section class="sector-section" id="s4">
+    <div class="container">
+        <div class="row g-5 align-items-center flex-lg-row-reverse">
+            <div class="col-lg-5" data-aos="fade-left">
+                <div class="sector-img-wrap">
+                    <img src="img/product-8.jpeg" alt="Electronic Industry Precision Parts" loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-right" data-aos-delay="80">
+                <div class="sector-icon-wrap"><i class="bi bi-cpu-fill"></i></div>
+                <span class="sector-num">Sector 04</span>
+                <h3 class="sector-title">Electronic Industries</h3>
+                <p class="sector-body">The electronics sector requires machined components that combine miniaturisation, precision, and material performance in equal measure. PAI produces precision structural and mechanical components for electronic enclosures, connectors, and assembly hardware used in industrial electronics and control systems.</p>
+                <p class="sector-body">Our machining capabilities support the fine tolerances and smooth surface finishes needed for reliable electrical contacts and mechanical interfaces in electronic products.</p>
+                <div class="apps-label">Key Applications</div>
+                <ul class="apps-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Cylindrical barrels</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Connector housings</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Heat sinks</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Precision bolts</li>
+                </ul>
+                <a href="contact.html" class="btn-pai">Get a Quote <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Sector 5: Industrial Products ─── -->
+<section class="sector-section" id="s5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5" data-aos="fade-right">
+                <div class="sector-img-wrap">
+                    <img src="img/product-10.jpeg" alt="Industrial Products" loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="80">
+                <div class="sector-icon-wrap"><i class="bi bi-tools"></i></div>
+                <span class="sector-num">Sector 05</span>
+                <h3 class="sector-title">Industrial Products</h3>
+                <p class="sector-body">General industrial manufacturing encompasses a broad spectrum of machined components used in machinery, material handling, automation, and factory infrastructure. PAI serves industrial product manufacturers with precision machined parts designed to perform reliably in demanding industrial environments.</p>
+                <p class="sector-body">Whether it is bespoke tooling, structural hardware, or production fixtures, our flexible manufacturing setup accommodates both high-volume repeat orders and specialised low-quantity requirements with equal attention to quality.</p>
+                <div class="apps-label">Key Applications</div>
+                <ul class="apps-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Fixtures &amp; jigs</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Fasteners</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Structural brackets</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Custom tooling</li>
+                </ul>
+                <a href="contact.html" class="btn-pai">Get a Quote <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Sector 6: Non-Automotive Segments ─── -->
+<section class="sector-section" id="s6">
+    <div class="container">
+        <div class="row g-5 align-items-center flex-lg-row-reverse">
+            <div class="col-lg-5" data-aos="fade-left">
+                <div class="sector-img-wrap">
+                    <img src="img/product-12.jpeg" alt="Non-Automotive Segment Components" loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-right" data-aos-delay="80">
+                <div class="sector-icon-wrap"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                <span class="sector-num">Sector 06</span>
+                <h3 class="sector-title">Non-Automotive Segments</h3>
+                <p class="sector-body">Beyond the automotive world, PAI extends its precision machining capabilities to highly regulated and technically demanding non-automotive sectors. Aerospace, defence, medical, and railway applications all require components with exceptional precision, rigorous quality documentation, and full material traceability.</p>
+                <p class="sector-body">Our ISO 9001:2015 certified quality system and experienced engineering team ensure components for these critical sectors are manufactured, inspected, and delivered to the highest possible standards.</p>
+                <div class="apps-label">Key Applications</div>
+                <ul class="apps-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Aerospace sub-components</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Medical device parts</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Defence components</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Railway parts</li>
+                </ul>
+                <a href="contact.html" class="btn-pai">Get a Quote <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Sector 7: Oil & Gas ─── -->
+<section class="sector-section" id="s7">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5" data-aos="fade-right">
+                <div class="sector-img-wrap">
+                    <img src="img/product-14.jpeg" alt="Oil and Gas Industry Components" loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="80">
+                <div class="sector-icon-wrap"><i class="bi bi-fuel-pump-fill"></i></div>
+                <span class="sector-num">Sector 07</span>
+                <h3 class="sector-title">Oil &amp; Gas Industry</h3>
+                <p class="sector-body">The oil and gas sector operates in some of the most extreme conditions encountered in any industry — high pressures, corrosive media, and remote or subsea environments where component failure is not an option. PAI manufactures precision components from high-performance alloys and stainless steels suited to these demanding operating conditions.</p>
+                <p class="sector-body">Our machined components are produced with complete dimensional traceability, material certification, and thorough inspection documentation to meet the rigorous quality and safety standards required by upstream and downstream operators.</p>
+                <div class="apps-label">Key Applications</div>
+                <ul class="apps-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Valve components</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Pipe fittings</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Flange parts</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Subsea components</li>
+                </ul>
+                <a href="contact.html" class="btn-pai">Get a Quote <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Sector 8: Energy & Power ─── -->
+<section class="sector-section" id="s8">
+    <div class="container">
+        <div class="row g-5 align-items-center flex-lg-row-reverse">
+            <div class="col-lg-5" data-aos="fade-left">
+                <div class="sector-img-wrap">
+                    <img src="img/product-16.jpeg" alt="Energy and Power Sector Components" loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-right" data-aos-delay="80">
+                <div class="sector-icon-wrap"><i class="bi bi-lightning-charge-fill"></i></div>
+                <span class="sector-num">Sector 08</span>
+                <h3 class="sector-title">Energy &amp; Power Sector</h3>
+                <p class="sector-body">The energy and power generation industry demands machined components that withstand thermal cycling, vibration, and mechanical stress over decades of continuous operation. PAI manufactures precision parts for turbines, generators, and power plant infrastructure used in both conventional and renewable energy applications.</p>
+                <p class="sector-body">From heat-resistant super alloy components for turbine assemblies to precision switchgear hardware, our manufacturing capabilities are matched by a quality system that ensures every component meets exacting standards.</p>
+                <div class="apps-label">Key Applications</div>
+                <ul class="apps-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Turbine components</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Generator parts</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Switchgear parts</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Power plant fixtures</li>
+                </ul>
+                <a href="contact.html" class="btn-pai">Get a Quote <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Materials Section -->
+<section class="materials-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center" data-aos="fade-up">
+                <span class="sec-eyebrow">Materials</span>
+                <h2 class="sec-h2">Materials We Machine</h2>
+                <div class="sec-rule mx-auto"></div>
+                <p style="color:var(--muted);font-size:.95rem;line-height:1.75;">We work with a comprehensive range of engineering materials to meet the requirements of every sector we serve.</p>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up" data-aos-delay="80">
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Aluminum</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Alloy Steel</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Super Alloys</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Stainless Steel</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Hardened Steel</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Brass</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Copper</span>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container" style="position:relative;z-index:1;">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h2 class="cta-heading">Ready to Start<br>Your Next Project?</h2>
+                <p class="cta-sub">Tell us your machining requirements and get a competitive quote. We serve industries across Pune, Maharashtra and beyond.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="contact.html" class="cta-btn-white">Get In Touch</a>
+                    <a href="tel:+919922589835" class="cta-btn-outline"><i class="fa fa-phone-alt me-2"></i>Call Us Now</a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-delay="100">
+                <div class="cta-info-card">
+                    <div class="cta-info-row">
+                        <div class="cta-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <div class="cta-info-label">Address</div>
+                            <div class="cta-info-value">Plot No: 3B+3, Plot No:22, "D1" Block,<br>Akurdi Industrial Estate, MIDC Chinchwad,<br>Pune 411019</div>
+                        </div>
+                    </div>
+                    <div class="cta-info-row">
+                        <div class="cta-info-icon"><i class="bi bi-telephone-fill"></i></div>
+                        <div>
+                            <div class="cta-info-label">Phone</div>
+                            <div class="cta-info-value">
+                                <a href="tel:+919922589835">+91 99225 89835</a> — Mr. S.S. Kolte<br>
+                                <a href="tel:+919325776868">+91 93257 76868</a> — Pranita Kolte
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-info-row">
+                        <div class="cta-info-icon"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <div class="cta-info-label">Email</div>
+                            <div class="cta-info-value"><a href="mailto:pandurangauto98@gmail.com">pandurangauto98@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <div class="cta-info-row">
+                        <div class="cta-info-icon"><i class="bi bi-clock-fill"></i></div>
+                        <div>
+                            <div class="cta-info-label">Availability</div>
+                            <div class="cta-info-value">24 Hours / 7 Days</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <span class="footer-brand-text">PAI<span>.</span></span>
+                <p style="line-height:1.8;max-width:300px;">ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components — serving multiple industries from MIDC Chinchwad, Pune.</p>
+                <div class="mt-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
+                    <i class="bi bi-patch-check-fill" style="color:#93C5FD;font-size:1.1rem;"></i>
+                    <span style="font-size:.82rem;font-weight:600;color:#fff;">ISO 9001:2015 Certified</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+                <div class="footer-heading">Quick Links</div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="footer-heading">Services</div>
+                <ul class="footer-links">
+                    <li><a href="services.html#s1">Automobile Industries</a></li>
+                    <li><a href="services.html#s2">Hydraulic Applications</a></li>
+                    <li><a href="services.html#s3">Pump &amp; Valve Industries</a></li>
+                    <li><a href="services.html#s4">Electronic Industries</a></li>
+                    <li><a href="services.html#s7">Oil &amp; Gas Industry</a></li>
+                    <li><a href="services.html#s8">Energy &amp; Power Sector</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-heading">Contact Us</div>
+                <div class="footer-contact-row">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Plot No: 3B+3, "D1" Block, Akurdi Industrial Estate, MIDC Chinchwad, Pune 411019</span>
+                </div>
+                <div class="footer-contact-row">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                        <a href="tel:+919922589835" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 99225 89835</a>
+                        <a href="tel:+919325776868" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 93257 76868</a>
+                    </div>
+                </div>
+                <div class="footer-contact-row">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:pandurangauto98@gmail.com" style="color:rgba(255,255,255,.55);text-decoration:none;">pandurangauto98@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            &copy; 2025 Pandurang Auto Industries. All Rights Reserved. &nbsp;&middot;&nbsp;
+            <a href="https://www.pandurangautoindustries.in">pandurangautoindustries.in</a> &nbsp;&middot;&nbsp; MIDC Chinchwad, Pune, Maharashtra
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 700, once: true, offset: 60 });
+const nav = document.getElementById('siteNav');
+if (nav) {
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+}
+const btt = document.getElementById('backToTop');
+if (btt) {
+    window.addEventListener('scroll', () => {
+        btt.classList.toggle('show', window.scrollY > 300);
+    });
+    btt.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+// Sectors nav active state on scroll
+const sections = document.querySelectorAll('section[id^="s"]');
+const snLinks = document.querySelectorAll('.sn-link');
+if (snLinks.length) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                snLinks.forEach(l => l.classList.remove('active'));
+                const active = document.querySelector(`.sn-link[href="#${entry.target.id}"]`);
+                if (active) active.classList.add('active');
+            }
+        });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    sections.forEach(s => observer.observe(s));
+}
+</script>
+</body>
+</html>

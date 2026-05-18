@@ -4,331 +4,425 @@
     <meta charset="utf-8">
     <title>Contact Us — Pandurang Auto Industries</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Pandurang Auto Industries — Plot No: 3B+3, Akurdi Industrial Estate, MIDC Chinchwad, Pune 411019. Call +91 99225 89835 or email pandurangauto98@gmail.com.">
+    <meta name="description" content="Contact Pandurang Auto Industries for precision CNC & VMC machined components. Request a quote or enquire about our manufacturing capabilities at MIDC Chinchwad, Pune 411019.">
     <link rel="canonical" href="https://www.pandurangautoindustries.in/contact.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+/* ── Variables ── */
+:root {
+    --primary: #1B3A6B;
+    --primary-light: #2A5298;
+    --dark: #0d1f3c;
+    --text: #374151;
+    --muted: #6B7280;
+    --border: #E8EDF5;
+    --bg-light: #F7F9FC;
+    --accent: #93C5FD;
+}
+*, body { font-family: 'Geist', sans-serif; }
+body { color: var(--text); background: #fff; }
+
+/* ── Shared: Topbar ── */
+.topbar-strip { background: #0d1f3c; font-size: 0.76rem; padding: 7px 0; }
+.topbar-strip a { color: rgba(255,255,255,.7); text-decoration: none; transition: .2s; }
+.topbar-strip a:hover { color: #fff; }
+
+/* ── Shared: Nav ── */
+.site-nav { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 1px 0 var(--border); transition: box-shadow .3s; }
+.site-nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
+.site-nav .navbar-brand-wrapper { background: var(--primary); padding: 14px 28px 14px 24px; clip-path: polygon(0 0,calc(100% - 14px) 0,100% 100%,0 100%); margin-right: 16px; }
+.site-nav .navbar-brand-text { font-weight: 800; font-size: 1.35rem; color: #fff; letter-spacing: -0.02em; line-height: 1; }
+.site-nav .navbar-brand-text span { color: var(--accent); }
+.site-nav .nav-link { font-size: .88rem; font-weight: 500; color: var(--dark) !important; padding: 24px 15px !important; position: relative; transition: color .2s; }
+.site-nav .nav-link::after { content: ''; position: absolute; bottom: 14px; left: 15px; right: 15px; height: 2px; background: var(--primary); transform: scaleX(0); transition: transform .25s; border-radius: 2px; }
+.site-nav .nav-link:hover::after, .site-nav .nav-link.active::after { transform: scaleX(1); }
+.site-nav .nav-link:hover { color: var(--primary) !important; }
+.site-nav .btn-quote { background: var(--primary); color: #fff; font-size: .83rem; font-weight: 700; padding: 10px 24px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, transform .2s; white-space: nowrap; border: none; }
+.site-nav .btn-quote:hover { background: var(--primary-light); transform: translateY(-1px); color: #fff; }
+.site-nav .navbar-toggler { border-color: #ccc; }
+@media (max-width: 991px) {
+    .site-nav .nav-link { padding: 12px 16px !important; }
+    .site-nav .nav-link::after { display: none; }
+}
+
+/* ── Page Hero ── */
+.page-hero { background: #fff; border-bottom: 1px solid var(--border); padding: 56px 0 48px; position: relative; overflow: hidden; }
+.page-hero::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 40%; background: linear-gradient(to right, transparent, #F0F5FF); pointer-events: none; }
+.page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #EEF4FF; border: 1px solid #C7D9F7; color: var(--primary); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 16px; }
+.page-hero h1 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; color: var(--dark); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px; }
+.page-hero-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 560px; }
+.breadcrumb { background: none; padding: 0; margin: 16px 0 0; }
+.breadcrumb-item a { color: var(--primary); text-decoration: none; font-size: .82rem; }
+.breadcrumb-item.active { color: var(--muted); font-size: .82rem; }
+.breadcrumb-item + .breadcrumb-item::before { color: #CBD5E1; }
+
+/* ── Section Labels ── */
+.sec-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 10px; }
+.sec-h2 { font-size: clamp(1.7rem, 2.8vw, 2.3rem); font-weight: 800; color: var(--dark); letter-spacing: -0.025em; line-height: 1.2; margin-bottom: 14px; }
+.sec-rule { width: 44px; height: 4px; background: var(--primary); border-radius: 2px; margin-bottom: 24px; }
+
+/* ── Contact Section ── */
+.contact-section { padding: 96px 0; background: #fff; }
+
+/* ── Info Cards ── */
+.info-card { background: var(--bg-light); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; margin-bottom: 18px; display: flex; align-items: flex-start; gap: 18px; transition: transform .3s, box-shadow .3s, background .3s; }
+.info-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(27,58,107,.09); background: #fff; }
+.info-card-icon { width: 52px; height: 52px; flex-shrink: 0; background: #EEF4FF; border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: background .3s; }
+.info-card:hover .info-card-icon { background: var(--primary); }
+.info-card-icon i { color: var(--primary); font-size: 1.2rem; transition: color .3s; }
+.info-card:hover .info-card-icon i { color: #fff; }
+.info-card-label { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.info-card-val { font-size: .96rem; font-weight: 600; color: var(--dark); line-height: 1.65; }
+.info-card-val a { color: var(--primary); text-decoration: none; }
+.info-card-val a:hover { text-decoration: underline; }
+
+/* ── Enquiry Form ── */
+.enquiry-panel { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 48px 44px; box-shadow: 0 8px 40px rgba(27,58,107,.07); }
+.form-label { font-size: .78rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--dark); margin-bottom: 6px; }
+.form-control, .form-select { border: 1.5px solid var(--border); border-radius: 8px; padding: 12px 16px; font-size: .9rem; color: var(--dark); background: var(--bg-light); transition: border-color .2s, box-shadow .2s, background .2s; font-family: 'Geist', sans-serif; }
+.form-control:focus, .form-select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(27,58,107,.1); background: #fff; outline: none; color: var(--dark); }
+.form-control::placeholder { color: #9CA3AF; }
+textarea.form-control { resize: vertical; min-height: 120px; }
+.btn-submit { background: var(--primary); color: #fff; font-weight: 700; font-size: .9rem; letter-spacing: .04em; padding: 15px 40px; border-radius: 8px; border: none; width: 100%; transition: background .2s, transform .2s, box-shadow .2s; font-family: 'Geist', sans-serif; cursor: pointer; }
+.btn-submit:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(27,58,107,.3); }
+.form-success { display: none; background: #F0FDF4; border: 1px solid #86EFAC; border-radius: 10px; padding: 20px 24px; color: #15803d; font-size: .9rem; font-weight: 600; }
+
+/* ── Footer ── */
+.site-footer { background: #070f1e; padding: 72px 0 0; color: rgba(255,255,255,.6); font-size: .87rem; }
+.footer-brand-text { font-weight: 800; font-size: 1.4rem; color: #fff; letter-spacing: -0.02em; margin-bottom: 16px; display: block; }
+.footer-brand-text span { color: var(--accent); }
+.footer-heading { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 18px; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: rgba(255,255,255,.55); text-decoration: none; transition: color .2s, padding-left .2s; font-size: .88rem; }
+.footer-links a:hover { color: #fff; padding-left: 4px; }
+.footer-contact-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.footer-contact-row i { color: var(--accent); margin-top: 3px; flex-shrink: 0; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.06); margin-top: 56px; padding: 20px 0; font-size: .76rem; color: rgba(255,255,255,.25); text-align: center; }
+.footer-bottom a { color: rgba(255,255,255,.25); text-decoration: none; }
+
+/* ── Back to Top ── */
+.back-to-top { position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px; background: var(--primary); color: #fff; border: none; border-radius: 50%; display: none; align-items: center; justify-content: center; font-size: 1rem; box-shadow: 0 4px 16px rgba(27,58,107,.4); z-index: 999; transition: background .2s, transform .2s; text-decoration: none; }
+.back-to-top:hover { background: var(--primary-light); transform: translateY(-2px); color: #fff; }
+.back-to-top.show { display: flex; }
+
+@media (max-width: 991px) {
+    .contact-section { padding: 56px 0; }
+    .enquiry-panel { padding: 32px 24px; }
+}
+</style>
 </head>
 <body>
 
-<!-- Spinner -->
-<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" role="status" style="width:3rem;height:3rem;"></div>
-</div>
-
 <!-- Topbar -->
-<div class="container-fluid bg-dark px-0">
-    <div class="row g-0 d-none d-lg-flex">
-        <div class="col-lg-6 ps-5">
-            <div class="h-100 d-inline-flex align-items-center text-white py-2" style="font-size:0.82rem;">
-                <i class="far fa-clock me-2" style="color:#93C5FD;"></i>
-                Mon – Sat: 9:00 AM – 6:00 PM
+<div class="topbar-strip d-none d-lg-block">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <span class="text-white" style="opacity:.7;"><i class="bi bi-geo-alt-fill me-1" style="color:#93C5FD;"></i>MIDC Chinchwad, Pune 411019</span>
+                <span class="text-white" style="opacity:.7;"><i class="bi bi-clock-fill me-1" style="color:#93C5FD;"></i>Available 24 / 7</span>
             </div>
-        </div>
-        <div class="col-lg-6 text-end pe-5">
-            <div class="h-100 d-inline-flex align-items-center gap-4 py-2">
-                <span class="text-white" style="font-size:0.82rem;">
-                    <i class="fa fa-phone-alt me-2" style="color:#93C5FD;"></i>+91 99225 89835 &nbsp;/&nbsp; +91 93257 76868
-                </span>
-                <span class="text-white" style="font-size:0.82rem;">
-                    <i class="fa fa-envelope me-2" style="color:#93C5FD;"></i>pandurangauto98@gmail.com
-                </span>
+            <div class="d-flex align-items-center gap-4">
+                <a href="tel:+919922589835" class="text-white" style="opacity:.7;"><i class="fa fa-phone-alt me-1" style="color:#93C5FD;"></i>+91 99225 89835</a>
+                <a href="mailto:pandurangauto98@gmail.com" class="text-white" style="opacity:.7;"><i class="fa fa-envelope me-1" style="color:#93C5FD;"></i>pandurangauto98@gmail.com</a>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-lg-5">
-    <a href="index.html" class="navbar-brand ps-0 me-0">
-        <div class="navbar-brand-wrapper">
-            <span class="navbar-brand-text">PAI<span>.</span></span>
+<nav class="site-nav navbar navbar-expand-lg py-0 pe-lg-4" id="siteNav">
+    <div class="container-fluid ps-0">
+        <a href="index.html" class="navbar-brand me-0 ps-0">
+            <div class="navbar-brand-wrapper">
+                <span class="navbar-brand-text">PAI<span>.</span></span>
+            </div>
+        </a>
+        <button class="navbar-toggler me-3 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </div>
+            <a href="contact.html" class="btn-quote ms-lg-4 me-lg-2 d-none d-lg-inline-block">Request a Quote</a>
         </div>
-    </a>
-    <button type="button" class="navbar-toggler me-0 ms-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About Us</a>
-            <a href="facilities.html" class="nav-item nav-link">Facilities</a>
-            <a href="solutions.html" class="nav-item nav-link">Solutions</a>
-            <a href="clients.html" class="nav-item nav-link">Clients</a>
-            <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
-        </div>
-        <a href="contact.html" class="btn btn-primary px-4 py-2 d-none d-lg-block ms-4" style="font-size:0.85rem;">Get a Quote</a>
     </div>
 </nav>
 
-<!-- Page Header -->
-<div class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="wow fadeInUp" data-wow-delay="0.1s">Contact Us</h1>
-                <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.2s">
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container" style="position:relative;z-index:1;">
+        <span class="page-hero-eyebrow"><i class="bi bi-chat-dots-fill"></i> Get In Touch</span>
+        <h1>Let's Discuss<br>Your Requirements</h1>
+        <p class="page-hero-sub">Send us your drawings or specifications and we'll get back to you with a competitive quote within 24 hours.</p>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+        </nav>
     </div>
-</div>
+</section>
 
-<!-- Contact Info + Form -->
-<section class="section-py">
+<!-- Contact Section -->
+<section class="contact-section">
     <div class="container">
         <div class="row g-5">
 
-            <!-- Left Column: Contact Details -->
-            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
-                <span class="section-title">Get In Touch</span>
-                <h2 class="section-heading">We'd Love To Hear From You</h2>
-                <div class="section-divider"></div>
-                <p class="mb-4" style="color:#4B5563;line-height:1.8;">
-                    Have a machining requirement or want to discuss a project? Reach out to us — our team will respond promptly.
-                </p>
+            <!-- Left: Contact Info -->
+            <div class="col-lg-5" data-aos="fade-right">
+                <span class="sec-eyebrow">Reach Us</span>
+                <h2 class="sec-h2">Contact<br>Information</h2>
+                <div class="sec-rule"></div>
+                <p style="line-height:1.85;margin-bottom:40px;color:var(--muted);">We're available 24/7. Call, email, or stop by our facility at MIDC Chinchwad, Pune. We respond to all enquiries promptly.</p>
 
-                <!-- Address Card -->
-                <div class="d-flex align-items-start mb-4 p-4 rounded" style="background:#F0F5FF;border:1px solid #DDE3ED;">
-                    <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded me-3" style="width:44px;height:44px;background:#1B3A6B;">
-                        <i class="bi bi-geo-alt-fill text-white" style="font-size:1.1rem;"></i>
-                    </div>
+                <div class="info-card">
+                    <div class="info-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
                     <div>
-                        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:#1B3A6B;margin-bottom:4px;">Our Address</div>
-                        <div style="font-size:0.9rem;color:#374151;line-height:1.6;">
-                            Plot No: 3B+3, Plot No:22, "D1" Block,<br>
-                            Akurdi Industrial Estate, Opp. Ador Welding Company,<br>
-                            MIDC Chinchwad, Pune 411019
+                        <div class="info-card-label">Factory Address</div>
+                        <div class="info-card-val">Plot No: 3B+3, Plot No:22, "D1" Block,<br>Akurdi Industrial Estate, MIDC Chinchwad,<br>Pune 411019, Maharashtra</div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-icon"><i class="bi bi-telephone-fill"></i></div>
+                    <div>
+                        <div class="info-card-label">Phone</div>
+                        <div class="info-card-val">
+                            <a href="tel:+919922589835">+91 99225 89835</a> <span style="font-size:.8rem;color:var(--muted);font-weight:500;">Mr. S.S. Kolte</span><br>
+                            <a href="tel:+919325776868">+91 93257 76868</a> <span style="font-size:.8rem;color:var(--muted);font-weight:500;">Pranita Kolte</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Phone Card -->
-                <div class="d-flex align-items-start mb-4 p-4 rounded" style="background:#F0F5FF;border:1px solid #DDE3ED;">
-                    <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded me-3" style="width:44px;height:44px;background:#1B3A6B;">
-                        <i class="bi bi-telephone-fill text-white" style="font-size:1.1rem;"></i>
-                    </div>
+                <div class="info-card">
+                    <div class="info-card-icon"><i class="bi bi-envelope-fill"></i></div>
                     <div>
-                        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:#1B3A6B;margin-bottom:4px;">Phone</div>
-                        <div style="font-size:0.9rem;line-height:1.7;">
-                            <a href="tel:+919922589835" style="color:#374151;text-decoration:none;display:block;">+91 99225 89835 — Mr. S.S. Kolte</a>
-                            <a href="tel:+919325776868" style="color:#374151;text-decoration:none;display:block;">+91 93257 76868 — Pranita Kolte</a>
-                        </div>
+                        <div class="info-card-label">Email</div>
+                        <div class="info-card-val"><a href="mailto:pandurangauto98@gmail.com">pandurangauto98@gmail.com</a></div>
                     </div>
                 </div>
 
-                <!-- Email Card -->
-                <div class="d-flex align-items-start mb-4 p-4 rounded" style="background:#F0F5FF;border:1px solid #DDE3ED;">
-                    <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded me-3" style="width:44px;height:44px;background:#1B3A6B;">
-                        <i class="bi bi-envelope-fill text-white" style="font-size:1.1rem;"></i>
-                    </div>
+                <div class="info-card">
+                    <div class="info-card-icon"><i class="bi bi-clock-fill"></i></div>
                     <div>
-                        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:#1B3A6B;margin-bottom:4px;">Email</div>
-                        <div style="font-size:0.9rem;">
-                            <a href="mailto:pandurangauto98@gmail.com" style="color:#374151;text-decoration:none;">pandurangauto98@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hours Card -->
-                <div class="d-flex align-items-start p-4 rounded" style="background:#F0F5FF;border:1px solid #DDE3ED;">
-                    <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded me-3" style="width:44px;height:44px;background:#1B3A6B;">
-                        <i class="bi bi-clock-fill text-white" style="font-size:1.1rem;"></i>
-                    </div>
-                    <div>
-                        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:#1B3A6B;margin-bottom:4px;">Business Hours</div>
-                        <div style="font-size:0.9rem;color:#374151;line-height:1.6;">Mon – Sat: 9:00 AM – 6:00 PM</div>
+                        <div class="info-card-label">Availability</div>
+                        <div class="info-card-val">24 Hours &nbsp;/&nbsp; 7 Days a Week</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Column: Enquiry Form -->
-            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s">
-                <div style="background:#fff;border:1px solid #DDE3ED;border-radius:8px;padding:32px;">
-                    <h4 class="mb-1" style="font-weight:700;color:#0F1F38;">Send Us an Enquiry</h4>
-                    <p class="mb-4" style="font-size:0.9rem;color:#6B7280;">Fill in the details below and we'll get back to you as soon as possible.</p>
+            <!-- Right: Enquiry Form -->
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
+                <div class="enquiry-panel">
+                    <span class="sec-eyebrow">Enquiry Form</span>
+                    <h3 style="font-size:1.5rem;font-weight:800;color:var(--dark);letter-spacing:-0.02em;margin-bottom:8px;">Request a Quote</h3>
+                    <p style="font-size:.88rem;color:var(--muted);margin-bottom:32px;line-height:1.7;">Fill in the form and we'll respond within 24 hours with pricing and lead time information.</p>
 
-                    <form action="#" method="POST">
-                        <div class="row g-3">
+                    <div id="formSuccess" class="form-success mb-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div><strong>Message sent!</strong> We'll get back to you within 24 hours.</div>
+                        </div>
+                    </div>
 
-                            <!-- Your Name -->
-                            <div class="col-sm-6">
-                                <label for="contactName" class="form-label" style="font-size:0.85rem;font-weight:600;color:#374151;">Your Name <span style="color:#dc2626;">*</span></label>
-                                <input type="text" class="form-control" id="contactName" name="name" placeholder="Full name" required style="border-radius:6px;font-family:'Geist',sans-serif;font-size:0.9rem;border-color:#DDE3ED;">
+                    <form id="enquiryForm" novalidate>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label" for="name">Your Name *</label>
+                                <input type="text" id="name" class="form-control" placeholder="Full name" required>
                             </div>
-
-                            <!-- Company Name -->
-                            <div class="col-sm-6">
-                                <label for="contactCompany" class="form-label" style="font-size:0.85rem;font-weight:600;color:#374151;">Company Name</label>
-                                <input type="text" class="form-control" id="contactCompany" name="company" placeholder="Your company" style="border-radius:6px;font-family:'Geist',sans-serif;font-size:0.9rem;border-color:#DDE3ED;">
+                            <div class="col-md-6">
+                                <label class="form-label" for="company">Company Name</label>
+                                <input type="text" id="company" class="form-control" placeholder="Your company">
                             </div>
-
-                            <!-- Email Address -->
-                            <div class="col-sm-6">
-                                <label for="contactEmail" class="form-label" style="font-size:0.85rem;font-weight:600;color:#374151;">Email Address <span style="color:#dc2626;">*</span></label>
-                                <input type="email" class="form-control" id="contactEmail" name="email" placeholder="you@company.com" required style="border-radius:6px;font-family:'Geist',sans-serif;font-size:0.9rem;border-color:#DDE3ED;">
+                            <div class="col-md-6">
+                                <label class="form-label" for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="+91 00000 00000" required>
                             </div>
-
-                            <!-- Phone Number -->
-                            <div class="col-sm-6">
-                                <label for="contactPhone" class="form-label" style="font-size:0.85rem;font-weight:600;color:#374151;">Phone Number</label>
-                                <input type="tel" class="form-control" id="contactPhone" name="phone" placeholder="+91 XXXXX XXXXX" style="border-radius:6px;font-family:'Geist',sans-serif;font-size:0.9rem;border-color:#DDE3ED;">
+                            <div class="col-md-6">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="you@company.com">
                             </div>
-
-                            <!-- Industry / Sector -->
-                            <div class="col-sm-6">
-                                <label for="contactIndustry" class="form-label" style="font-size:0.85rem;font-weight:600;color:#374151;">Industry / Sector</label>
-                                <select class="form-select" id="contactIndustry" name="industry" style="border-radius:6px;font-family:'Geist',sans-serif;font-size:0.9rem;border-color:#DDE3ED;">
-                                    <option value="" selected>Select sector...</option>
-                                    <option value="automobile">Automobile Industries</option>
-                                    <option value="hydraulic">Hydraulic Applications</option>
-                                    <option value="pump-valve">Pump &amp; Valve Industries</option>
-                                    <option value="electronic">Electronic Industries</option>
-                                    <option value="oil-gas">Oil &amp; Gas Industry</option>
-                                    <option value="energy-power">Energy &amp; Power Sector</option>
-                                    <option value="industrial">Industrial Products</option>
-                                    <option value="non-automotive">Non-Automotive Segments</option>
-                                    <option value="other">Other</option>
+                            <div class="col-md-6">
+                                <label class="form-label" for="industry">Industry / Sector</label>
+                                <select id="industry" class="form-select">
+                                    <option value="" disabled selected>Select industry</option>
+                                    <option>Automobile Industries</option>
+                                    <option>Hydraulic Applications</option>
+                                    <option>Pump &amp; Valve Industries</option>
+                                    <option>Electronic Industries</option>
+                                    <option>Industrial Products</option>
+                                    <option>Non-Automotive Segments</option>
+                                    <option>Oil &amp; Gas Industry</option>
+                                    <option>Energy &amp; Power Sector</option>
+                                    <option>Other</option>
                                 </select>
                             </div>
-
-                            <!-- Material Required -->
-                            <div class="col-sm-6">
-                                <label for="contactMaterial" class="form-label" style="font-size:0.85rem;font-weight:600;color:#374151;">Material Required</label>
-                                <select class="form-select" id="contactMaterial" name="material" style="border-radius:6px;font-family:'Geist',sans-serif;font-size:0.9rem;border-color:#DDE3ED;">
-                                    <option value="" selected>Select material...</option>
-                                    <option value="aluminum">Aluminum</option>
-                                    <option value="alloy-steel">Alloy Steel</option>
-                                    <option value="super-alloys">Super Alloys</option>
-                                    <option value="stainless-steel">Stainless Steel</option>
-                                    <option value="hardened-steel">Hardened Steel</option>
-                                    <option value="brass">Brass</option>
-                                    <option value="copper">Copper</option>
-                                    <option value="other-multiple">Other / Multiple</option>
+                            <div class="col-md-6">
+                                <label class="form-label" for="material">Material</label>
+                                <select id="material" class="form-select">
+                                    <option value="" disabled selected>Select material</option>
+                                    <option>Aluminum</option>
+                                    <option>Alloy Steel</option>
+                                    <option>Super Alloys</option>
+                                    <option>Stainless Steel</option>
+                                    <option>Hardened Steel</option>
+                                    <option>Brass</option>
+                                    <option>Copper</option>
+                                    <option>Not sure / Other</option>
                                 </select>
                             </div>
-
-                            <!-- Message / Requirements -->
                             <div class="col-12">
-                                <label for="contactMessage" class="form-label" style="font-size:0.85rem;font-weight:600;color:#374151;">Message / Requirements <span style="color:#dc2626;">*</span></label>
-                                <textarea class="form-control" id="contactMessage" name="message" rows="5" placeholder="Describe your machining requirements, quantities, tolerances, or any other details..." required style="border-radius:6px;font-family:'Geist',sans-serif;font-size:0.9rem;border-color:#DDE3ED;resize:vertical;"></textarea>
+                                <label class="form-label" for="message">Message / Requirements *</label>
+                                <textarea id="message" class="form-control" placeholder="Describe your component requirements, quantities, tolerances, or any other details..." rows="5" required></textarea>
                             </div>
-
-                            <!-- Submit Button -->
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary w-100 py-3" style="background:#1B3A6B;border-color:#1B3A6B;border-radius:6px;font-family:'Geist',sans-serif;font-size:0.95rem;font-weight:600;letter-spacing:0.02em;">
+                                <button type="submit" class="btn-submit">
                                     <i class="bi bi-send-fill me-2"></i>Send Enquiry
                                 </button>
-                                <p class="text-center mt-3 mb-0" style="font-size:0.8rem;color:#9CA3AF;">
-                                    <i class="bi bi-clock me-1"></i>We typically respond within 1 business day.
+                                <p style="font-size:.76rem;color:var(--muted);text-align:center;margin-top:14px;margin-bottom:0;">
+                                    <i class="bi bi-shield-check me-1" style="color:var(--primary);"></i>Your details are secure and will not be shared with third parties.
                                 </p>
                             </div>
-
                         </div>
                     </form>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- Google Maps Embed -->
-<div class="container-fluid px-0">
-    <div class="text-center py-3" style="background:#F8FAFF;border-top:1px solid #DDE3ED;border-bottom:1px solid #DDE3ED;">
-        <span style="font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1B3A6B;">
-            <i class="bi bi-geo-alt-fill me-2" style="color:#2563eb;"></i>Find Us — MIDC Chinchwad, Pune
-        </span>
-    </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.8474859!2d73.7958!3d18.6480!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDM4JzUyLjgiTiA3M8KwNDcnNDUuNiJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="450" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Map -->
+<div style="border-top:1px solid var(--border);">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.963!2d73.8082!3d18.6475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e6c00d5d9d%3A0xa5e15eaad4a28f28!2sMIDC%20Chinchwad%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411019!5e0!3m2!1sen!2sin!4v1700000000000"
+        width="100%" height="400"
+        style="border:none;display:block;filter:saturate(.9);"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Pandurang Auto Industries Location">
+    </iframe>
 </div>
 
 <!-- Footer -->
-<footer>
+<footer class="site-footer">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-4">
-                <div class="footer-brand-text mb-3">PAI<span>.</span></div>
-                <p>Pandurang Auto Industries is an ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components, serving multiple industries from MIDC Chinchwad, Pune.</p>
-                <div class="mt-4">
-                    <span style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);">ISO Certified</span>
-                    <div class="mt-2 d-inline-flex align-items-center gap-2 px-3 py-2 border border-secondary rounded" style="border-color:rgba(255,255,255,0.15) !important;">
-                        <i class="bi bi-patch-check-fill" style="color:#93C5FD;font-size:1.1rem;"></i>
-                        <span style="font-size:0.82rem;font-weight:600;color:#fff;">ISO 9001:2015</span>
-                    </div>
+                <span class="footer-brand-text">PAI<span>.</span></span>
+                <p style="line-height:1.8;max-width:300px;">ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components — serving multiple industries from MIDC Chinchwad, Pune.</p>
+                <div class="mt-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
+                    <i class="bi bi-patch-check-fill" style="color:#93C5FD;font-size:1.1rem;"></i>
+                    <span style="font-size:.82rem;font-weight:600;color:#fff;">ISO 9001:2015 Certified</span>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-2">
-                <h6>Quick Links</h6>
-                <ul>
+                <div class="footer-heading">Quick Links</div>
+                <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="facilities.html">Facilities</a></li>
-                    <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="clients.html">Clients</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <h6>Solutions</h6>
-                <ul>
-                    <li><a href="solutions.html">Automobile Industries</a></li>
-                    <li><a href="solutions.html">Hydraulic Applications</a></li>
-                    <li><a href="solutions.html">Pump &amp; Valve Industries</a></li>
-                    <li><a href="solutions.html">Electronic Industries</a></li>
-                    <li><a href="solutions.html">Oil &amp; Gas Industry</a></li>
-                    <li><a href="solutions.html">Energy &amp; Power Sector</a></li>
-                    <li><a href="solutions.html">Industrial Products</a></li>
-                    <li><a href="solutions.html">Non-Automotive Segments</a></li>
+                <div class="footer-heading">Services</div>
+                <ul class="footer-links">
+                    <li><a href="services.html#s1">Automobile Industries</a></li>
+                    <li><a href="services.html#s2">Hydraulic Applications</a></li>
+                    <li><a href="services.html#s3">Pump &amp; Valve Industries</a></li>
+                    <li><a href="services.html#s4">Electronic Industries</a></li>
+                    <li><a href="services.html#s7">Oil &amp; Gas Industry</a></li>
+                    <li><a href="services.html#s8">Energy &amp; Power Sector</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
-                <h6>Contact Us</h6>
-                <div class="footer-contact-item">
+                <div class="footer-heading">Contact Us</div>
+                <div class="footer-contact-row">
                     <i class="bi bi-geo-alt-fill"></i>
-                    <span>Plot No: 3B+3, Plot No:22, "D1" Block, Akurdi Industrial Estate, Opp. Ador Welding Company, MIDC Chinchwad, Pune 411019</span>
+                    <span>Plot No: 3B+3, "D1" Block, Akurdi Industrial Estate, MIDC Chinchwad, Pune 411019</span>
                 </div>
-                <div class="footer-contact-item">
+                <div class="footer-contact-row">
                     <i class="bi bi-telephone-fill"></i>
                     <div>
-                        <a href="tel:+919922589835" style="color:rgba(255,255,255,0.65);text-decoration:none;display:block;">+91 99225 89835 (Mr. S.S. Kolte)</a>
-                        <a href="tel:+919325776868" style="color:rgba(255,255,255,0.65);text-decoration:none;display:block;">+91 93257 76868 (Pranita Kolte)</a>
+                        <a href="tel:+919922589835" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 99225 89835</a>
+                        <a href="tel:+919325776868" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 93257 76868</a>
                     </div>
                 </div>
-                <div class="footer-contact-item">
+                <div class="footer-contact-row">
                     <i class="bi bi-envelope-fill"></i>
-                    <a href="mailto:pandurangauto98@gmail.com" style="color:rgba(255,255,255,0.65);text-decoration:none;">pandurangauto98@gmail.com</a>
+                    <a href="mailto:pandurangauto98@gmail.com" style="color:rgba(255,255,255,.55);text-decoration:none;">pandurangauto98@gmail.com</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="container">
-            © 2025 Pandurang Auto Industries. All Rights Reserved. · <a href="https://www.pandurangautoindustries.in" style="color:rgba(255,255,255,0.35);text-decoration:none;">pandurangautoindustries.in</a> · MIDC Chinchwad, Pune, Maharashtra, India
+            &copy; 2025 Pandurang Auto Industries. All Rights Reserved. &nbsp;&middot;&nbsp;
+            <a href="https://www.pandurangautoindustries.in">pandurangautoindustries.in</a> &nbsp;&middot;&nbsp; MIDC Chinchwad, Pune, Maharashtra
         </div>
     </div>
 </footer>
 
-<a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- Back to Top -->
+<a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+<!-- JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-<script>new WOW().init();</script>
-</body></html>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 700, once: true, offset: 60 });
+const nav = document.getElementById('siteNav');
+if (nav) {
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+}
+const btt = document.getElementById('backToTop');
+if (btt) {
+    window.addEventListener('scroll', () => {
+        btt.classList.toggle('show', window.scrollY > 300);
+    });
+    btt.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+// Form submission
+const form = document.getElementById('enquiryForm');
+const successMsg = document.getElementById('formSuccess');
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nameEl = document.getElementById('name');
+        const phoneEl = document.getElementById('phone');
+        const msgEl = document.getElementById('message');
+        let valid = true;
+        [nameEl, phoneEl, msgEl].forEach(el => {
+            if (!el.value.trim()) { el.style.borderColor = '#EF4444'; valid = false; }
+            else el.style.borderColor = '';
+        });
+        if (!valid) return;
+        successMsg.style.display = 'block';
+        form.reset();
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        setTimeout(() => { successMsg.style.display = 'none'; }, 7000);
+    });
+}
+</script>
+</body>
+</html>

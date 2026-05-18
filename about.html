@@ -4,546 +4,587 @@
     <meta charset="utf-8">
     <title>About Us — Pandurang Auto Industries</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Pandurang Auto Industries — ISO 9001:2015 certified precision CNC & VMC machined components manufacturer with 23+ years of experience in MIDC Chinchwad, Pune. Our vision, mission, materials, and sectors served.">
+    <meta name="description" content="Learn about Pandurang Auto Industries — ISO 9001:2015 certified precision CNC & VMC machined components manufacturer with 23+ years of experience in MIDC Chinchwad, Pune.">
     <link rel="canonical" href="https://www.pandurangautoindustries.in/about.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+/* ── Variables ── */
+:root {
+    --primary: #1B3A6B;
+    --primary-light: #2A5298;
+    --dark: #0d1f3c;
+    --text: #374151;
+    --muted: #6B7280;
+    --border: #E8EDF5;
+    --bg-light: #F7F9FC;
+    --accent: #93C5FD;
+}
+*, body { font-family: 'Geist', sans-serif; }
+body { color: var(--text); background: #fff; }
+
+/* ── Shared: Topbar ── */
+.topbar-strip { background: #0d1f3c; font-size: 0.76rem; padding: 7px 0; }
+.topbar-strip a { color: rgba(255,255,255,.7); text-decoration: none; transition: .2s; }
+.topbar-strip a:hover { color: #fff; }
+
+/* ── Shared: Nav ── */
+.site-nav { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 1px 0 var(--border); transition: box-shadow .3s; }
+.site-nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
+.site-nav .navbar-brand-wrapper { background: var(--primary); padding: 14px 28px 14px 24px; clip-path: polygon(0 0,calc(100% - 14px) 0,100% 100%,0 100%); margin-right: 16px; }
+.site-nav .navbar-brand-text { font-weight: 800; font-size: 1.35rem; color: #fff; letter-spacing: -0.02em; line-height: 1; }
+.site-nav .navbar-brand-text span { color: var(--accent); }
+.site-nav .nav-link { font-size: .88rem; font-weight: 500; color: var(--dark) !important; padding: 24px 15px !important; position: relative; transition: color .2s; }
+.site-nav .nav-link::after { content: ''; position: absolute; bottom: 14px; left: 15px; right: 15px; height: 2px; background: var(--primary); transform: scaleX(0); transition: transform .25s; border-radius: 2px; }
+.site-nav .nav-link:hover::after, .site-nav .nav-link.active::after { transform: scaleX(1); }
+.site-nav .nav-link:hover { color: var(--primary) !important; }
+.site-nav .btn-quote { background: var(--primary); color: #fff; font-size: .83rem; font-weight: 700; padding: 10px 24px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, transform .2s; white-space: nowrap; border: none; }
+.site-nav .btn-quote:hover { background: var(--primary-light); transform: translateY(-1px); color: #fff; }
+.site-nav .navbar-toggler { border-color: #ccc; }
+@media (max-width: 991px) {
+    .site-nav .nav-link { padding: 12px 16px !important; }
+    .site-nav .nav-link::after { display: none; }
+}
+
+/* ── Page Hero ── */
+.page-hero {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 56px 0 48px;
+    position: relative;
+    overflow: hidden;
+}
+.page-hero::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 40%;
+    background: linear-gradient(to right, transparent, #F0F5FF);
+    pointer-events: none;
+}
+.page-hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #EEF4FF; border: 1px solid #C7D9F7;
+    color: var(--primary); font-size: .72rem; font-weight: 700;
+    letter-spacing: .14em; text-transform: uppercase;
+    padding: 5px 14px; border-radius: 100px; margin-bottom: 16px;
+}
+.page-hero h1 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 800; color: var(--dark);
+    letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px;
+}
+.page-hero-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 560px; }
+.breadcrumb { background: none; padding: 0; margin: 16px 0 0; }
+.breadcrumb-item a { color: var(--primary); text-decoration: none; font-size: .82rem; }
+.breadcrumb-item.active { color: var(--muted); font-size: .82rem; }
+.breadcrumb-item + .breadcrumb-item::before { color: #CBD5E1; }
+
+/* ── Section Labels ── */
+.sec-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 10px; }
+.sec-h2 { font-size: clamp(1.7rem, 2.8vw, 2.3rem); font-weight: 800; color: var(--dark); letter-spacing: -0.025em; line-height: 1.2; margin-bottom: 14px; }
+.sec-rule { width: 44px; height: 4px; background: var(--primary); border-radius: 2px; margin-bottom: 24px; }
+
+/* ── Overview Section ── */
+.overview-section { padding: 96px 0; background: #fff; }
+.img-wrap { position: relative; border-radius: 16px; overflow: hidden; }
+.img-wrap img { width: 100%; height: 480px; object-fit: cover; display: block; }
+.img-badge {
+    position: absolute; background: var(--primary);
+    color: #fff; padding: 18px 22px; border-radius: 12px;
+    text-align: center; box-shadow: 0 8px 32px rgba(27,58,107,.35);
+}
+.img-badge.exp { bottom: 28px; left: -18px; }
+.img-badge .num { font-size: 2.2rem; font-weight: 800; line-height: 1; display: block; }
+.img-badge .lbl { font-size: .65rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; opacity: .8; line-height: 1.3; display: block; margin-top: 4px; }
+.img-badge.iso { top: 28px; right: -18px; background: #fff; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,.1); }
+.img-badge.iso i { color: var(--primary); font-size: 1.1rem; display: block; margin-bottom: 4px; }
+.img-badge.iso span { font-size: .72rem; font-weight: 700; color: var(--dark); white-space: nowrap; display: block; }
+
+.check-list { list-style: none; padding: 0; margin: 0 0 28px; }
+.check-list li { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; color: var(--text); margin-bottom: 10px; line-height: 1.6; }
+.check-list li i { color: var(--primary); margin-top: 3px; flex-shrink: 0; }
+
+.btn-pai { background: var(--primary); color: #fff; font-weight: 700; font-size: .88rem; letter-spacing: .04em; padding: 13px 32px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, transform .2s, box-shadow .2s; border: none; }
+.btn-pai:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(27,58,107,.3); color: #fff; }
+.btn-pai-outline { background: transparent; color: var(--primary); border: 1.5px solid var(--primary); font-weight: 600; font-size: .88rem; padding: 12px 28px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, color .2s, transform .2s; }
+.btn-pai-outline:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+
+/* ── Stats Strip ── */
+.stats-strip { background: var(--bg-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.stat-item { padding: 36px 24px; text-align: center; position: relative; }
+.stat-item + .stat-item::before { content: ''; position: absolute; left: 0; top: 20%; bottom: 20%; width: 1px; background: var(--border); }
+.stat-num { font-size: 2.4rem; font-weight: 800; color: var(--primary); line-height: 1; display: block; letter-spacing: -0.02em; }
+.stat-lbl { font-size: .72rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); display: block; margin-top: 6px; }
+
+/* ── Vision / Mission ── */
+.vm-section { padding: 96px 0; background: #fff; }
+.vm-card {
+    border-radius: 16px; padding: 40px 36px; height: 100%;
+    border: 1px solid var(--border); position: relative; overflow: hidden;
+    transition: transform .3s, box-shadow .3s;
+}
+.vm-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(27,58,107,.09); }
+.vm-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--primary); }
+.vm-icon-wrap { width: 60px; height: 60px; background: #EEF4FF; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; transition: background .3s; }
+.vm-card:hover .vm-icon-wrap { background: var(--primary); }
+.vm-icon-wrap i { color: var(--primary); font-size: 1.5rem; transition: color .3s; }
+.vm-card:hover .vm-icon-wrap i { color: #fff; }
+.vm-title { font-size: 1.15rem; font-weight: 800; color: var(--dark); margin-bottom: 16px; }
+.vm-text { color: var(--muted); font-size: .96rem; line-height: 1.85; margin: 0; font-style: italic; }
+
+/* ── Materials Section ── */
+.materials-section { padding: 96px 0; background: var(--bg-light); }
+.mat-pill {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #fff; border: 1px solid var(--border);
+    color: var(--dark); padding: 12px 22px; border-radius: 100px;
+    font-size: .88rem; font-weight: 600;
+    transition: border-color .25s, box-shadow .25s, transform .25s;
+    cursor: default;
+}
+.mat-pill:hover { border-color: var(--primary); box-shadow: 0 4px 16px rgba(27,58,107,.12); transform: translateY(-3px); }
+.mat-pill i { color: var(--primary); font-size: .65rem; }
+
+/* ── Sectors Section ── */
+.sectors-section { padding: 96px 0; background: #fff; }
+.sector-card {
+    border: 1px solid var(--border); border-radius: 14px;
+    padding: 32px 28px; height: 100%; background: #fff;
+    transition: transform .3s, box-shadow .3s, border-color .3s;
+    position: relative; overflow: hidden;
+}
+.sector-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--primary); transform: scaleX(0); transition: transform .3s; border-radius: 0 0 14px 14px; }
+.sector-card:hover { transform: translateY(-5px); box-shadow: 0 20px 60px rgba(27,58,107,.1); border-color: transparent; }
+.sector-card:hover::after { transform: scaleX(1); }
+.sc-icon { width: 52px; height: 52px; border-radius: 12px; background: #EEF4FF; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; transition: background .3s; }
+.sector-card:hover .sc-icon { background: var(--primary); }
+.sc-icon i { font-size: 1.3rem; color: var(--primary); transition: color .3s; }
+.sector-card:hover .sc-icon i { color: #fff; }
+.sc-title { font-size: .98rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.sc-desc { font-size: .83rem; color: var(--muted); line-height: 1.7; margin: 0; }
+
+/* ── Why Us ── */
+.whyus-section { padding: 96px 0; background: var(--bg-light); }
+.wu-card { border: 1px solid var(--border); border-radius: 14px; padding: 36px 32px; height: 100%; background: #fff; transition: transform .3s, box-shadow .3s; }
+.wu-card:hover { transform: translateY(-5px); box-shadow: 0 16px 50px rgba(27,58,107,.09); }
+.wu-num { font-size: 3.2rem; font-weight: 800; color: #EEF2FF; line-height: 1; margin-bottom: 4px; transition: color .3s; }
+.wu-card:hover .wu-num { color: #DBEAFE; }
+.wu-icon { width: 48px; height: 48px; background: #EEF4FF; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 18px; transition: background .3s; }
+.wu-card:hover .wu-icon { background: var(--primary); }
+.wu-icon i { color: var(--primary); font-size: 1.2rem; transition: color .3s; }
+.wu-card:hover .wu-icon i { color: #fff; }
+.wu-title { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.wu-desc { font-size: .85rem; color: var(--muted); line-height: 1.7; margin: 0; }
+
+/* ── CTA Section ── */
+.cta-section { padding: 96px 0; background: linear-gradient(135deg, #0d1f3c 0%, #1B3A6B 100%); position: relative; overflow: hidden; }
+.cta-section::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+.cta-heading { font-size: clamp(1.8rem,3.5vw,3rem); font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 16px; }
+.cta-sub { color: rgba(255,255,255,.65); font-size: 1rem; line-height: 1.75; margin-bottom: 36px; }
+.cta-btn-white { background: #fff; color: var(--primary); font-weight: 700; font-size: .88rem; letter-spacing: .04em; padding: 14px 36px; border-radius: 4px; border: none; text-decoration: none; display: inline-block; transition: transform .2s, box-shadow .2s; }
+.cta-btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); color: var(--primary); }
+.cta-btn-outline { background: transparent; color: #fff; font-weight: 600; font-size: .88rem; padding: 14px 36px; border-radius: 4px; border: 1px solid rgba(255,255,255,.35); text-decoration: none; display: inline-block; transition: background .2s, transform .2s; }
+.cta-btn-outline:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); color: #fff; transform: translateY(-2px); }
+.cta-info-card { background: rgba(255,255,255,.07); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 32px; }
+.cta-info-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 20px; }
+.cta-info-row:last-child { margin-bottom: 0; }
+.cta-info-icon { width: 40px; height: 40px; flex-shrink: 0; background: rgba(255,255,255,.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.cta-info-icon i { color: var(--accent); font-size: 1rem; }
+.cta-info-label { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 3px; }
+.cta-info-value { font-size: .88rem; font-weight: 600; color: rgba(255,255,255,.85); line-height: 1.5; }
+.cta-info-value a { color: rgba(255,255,255,.85); text-decoration: none; }
+.cta-info-value a:hover { color: #fff; }
+
+/* ── Footer ── */
+.site-footer { background: #070f1e; padding: 72px 0 0; color: rgba(255,255,255,.6); font-size: .87rem; }
+.footer-brand-text { font-weight: 800; font-size: 1.4rem; color: #fff; letter-spacing: -0.02em; margin-bottom: 16px; display: block; }
+.footer-brand-text span { color: var(--accent); }
+.footer-heading { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 18px; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: rgba(255,255,255,.55); text-decoration: none; transition: color .2s, padding-left .2s; font-size: .88rem; }
+.footer-links a:hover { color: #fff; padding-left: 4px; }
+.footer-contact-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.footer-contact-row i { color: var(--accent); margin-top: 3px; flex-shrink: 0; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.06); margin-top: 56px; padding: 20px 0; font-size: .76rem; color: rgba(255,255,255,.25); text-align: center; }
+.footer-bottom a { color: rgba(255,255,255,.25); text-decoration: none; }
+
+/* ── Back to Top ── */
+.back-to-top { position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px; background: var(--primary); color: #fff; border: none; border-radius: 50%; display: none; align-items: center; justify-content: center; font-size: 1rem; box-shadow: 0 4px 16px rgba(27,58,107,.4); z-index: 999; transition: background .2s, transform .2s; text-decoration: none; }
+.back-to-top:hover { background: var(--primary-light); transform: translateY(-2px); color: #fff; }
+.back-to-top.show { display: flex; }
+
+@media (max-width: 991px) {
+    .img-badge.exp, .img-badge.iso { display: none; }
+    .overview-section, .vm-section, .materials-section, .sectors-section, .whyus-section { padding: 64px 0; }
+}
+@media (max-width: 767px) {
+    .stat-item + .stat-item::before { display: none; }
+}
+</style>
 </head>
 <body>
 
-<!-- Spinner -->
-<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" role="status" style="width:3rem;height:3rem;"></div>
-</div>
-
 <!-- Topbar -->
-<div class="container-fluid bg-dark px-0">
-    <div class="row g-0 d-none d-lg-flex">
-        <div class="col-lg-6 ps-5">
-            <div class="h-100 d-inline-flex align-items-center text-white py-2" style="font-size:0.82rem;">
-                <i class="far fa-clock me-2" style="color:#93C5FD;"></i>
-                Mon – Sat: 9:00 AM – 6:00 PM
+<div class="topbar-strip d-none d-lg-block">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <span class="text-white" style="opacity:.7;"><i class="bi bi-geo-alt-fill me-1" style="color:#93C5FD;"></i>MIDC Chinchwad, Pune 411019</span>
+                <span class="text-white" style="opacity:.7;"><i class="bi bi-clock-fill me-1" style="color:#93C5FD;"></i>Available 24 / 7</span>
             </div>
-        </div>
-        <div class="col-lg-6 text-end pe-5">
-            <div class="h-100 d-inline-flex align-items-center gap-4 py-2">
-                <span class="text-white" style="font-size:0.82rem;">
-                    <i class="fa fa-phone-alt me-2" style="color:#93C5FD;"></i>+91 99225 89835 &nbsp;/&nbsp; +91 93257 76868
-                </span>
-                <span class="text-white" style="font-size:0.82rem;">
-                    <i class="fa fa-envelope me-2" style="color:#93C5FD;"></i>pandurangauto98@gmail.com
-                </span>
+            <div class="d-flex align-items-center gap-4">
+                <a href="tel:+919922589835" class="text-white" style="opacity:.7;"><i class="fa fa-phone-alt me-1" style="color:#93C5FD;"></i>+91 99225 89835</a>
+                <a href="mailto:pandurangauto98@gmail.com" class="text-white" style="opacity:.7;"><i class="fa fa-envelope me-1" style="color:#93C5FD;"></i>pandurangauto98@gmail.com</a>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-lg-5">
-    <a href="index.html" class="navbar-brand ps-0 me-0">
-        <div class="navbar-brand-wrapper">
-            <span class="navbar-brand-text">PAI<span>.</span></span>
+<nav class="site-nav navbar navbar-expand-lg py-0 pe-lg-4" id="siteNav">
+    <div class="container-fluid ps-0">
+        <a href="index.html" class="navbar-brand me-0 ps-0">
+            <div class="navbar-brand-wrapper"><span class="navbar-brand-text">PAI<span>.</span></span></div>
+        </a>
+        <button class="navbar-toggler me-3 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <a href="contact.html" class="btn-quote ms-lg-4 me-lg-2 d-none d-lg-inline-block">Request a Quote</a>
         </div>
-    </a>
-    <button type="button" class="navbar-toggler me-0 ms-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link active">About Us</a>
-            <a href="facilities.html" class="nav-item nav-link">Facilities</a>
-            <a href="solutions.html" class="nav-item nav-link">Solutions</a>
-            <a href="clients.html" class="nav-item nav-link">Clients</a>
-            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-        </div>
-        <a href="contact.html" class="btn btn-primary px-4 py-2 d-none d-lg-block ms-4" style="font-size:0.85rem;">Get a Quote</a>
     </div>
 </nav>
 
-<!-- Page Header -->
-<div class="page-header">
+<!-- Page Hero -->
+<div class="page-hero">
+    <div class="container" style="position:relative;z-index:1;">
+        <div class="page-hero-eyebrow"><i class="bi bi-building-gear"></i> About Pandurang Auto Industries</div>
+        <h1>Precision Manufacturing<br>You Can <span style="color:#1B3A6B;text-decoration:underline;text-decoration-color:#93C5FD;text-underline-offset:6px;">Trust</span></h1>
+        <p class="page-hero-sub">ISO 9001:2015 certified CNC &amp; VMC machined components manufacturer — 23+ years of engineering excellence from MIDC Chinchwad, Pune.</p>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Overview -->
+<section class="overview-section">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="wow fadeInUp" data-wow-delay="0.1s">About Us</h1>
-                <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.2s">
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                    </ol>
-                </nav>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="img-wrap" style="padding-right:32px;padding-bottom:32px;">
+                    <img src="img/product-3.jpeg" alt="PAI Precision CNC Machined Components">
+                    <div class="img-badge exp">
+                        <span class="num">23<sup style="font-size:.9rem;font-weight:600;">+</sup></span>
+                        <span class="lbl">Years of<br>Experience</span>
+                    </div>
+                    <div class="img-badge iso" style="bottom:0;right:0;top:auto;left:auto;display:flex;align-items:center;gap:8px;padding:12px 16px;">
+                        <i class="bi bi-patch-check-fill" style="color:#1B3A6B;font-size:1.1rem;"></i>
+                        <span style="font-size:.75rem;font-weight:700;color:#0d1f3c;">ISO 9001:2015</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                <span class="sec-eyebrow">Who We Are</span>
+                <h2 class="sec-h2">Specialists in High-Precision<br>CNC &amp; VMC Machining</h2>
+                <div class="sec-rule"></div>
+                <p style="color:#4B5563;line-height:1.85;margin-bottom:16px;">Pandurang Auto Industries is an ISO 9001:2015 certified company specializing in high-precision machining. We are a custom CNC machined parts manufacturer delivering precision VMC services for a wide range of industries — serving customers with consistent quality and tight tolerances.</p>
+                <p style="color:#4B5563;line-height:1.85;margin-bottom:28px;">With over 23 years of experience, we specialize in Mass production and Batch production parts — helping customers move quickly from design to finished component, reliably and cost-effectively.</p>
+                <ul class="check-list">
+                    <li><i class="bi bi-check-circle-fill"></i>ISO 9001:2015 Certified Quality Management System</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Advanced CNC &amp; VMC Machining Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Mass Production &amp; Batch Production Capabilities</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Tight Tolerances with Consistent Repeatability</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Serving 8+ Industries from MIDC Chinchwad, Pune</li>
+                </ul>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="contact.html" class="btn-pai">Request a Quote</a>
+                    <a href="facilities.html" class="btn-pai-outline">View Facilities</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Strip -->
+<div class="stats-strip">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-6 col-md-3 stat-item" data-aos="fade-up">
+                <span class="stat-num">23+</span>
+                <span class="stat-lbl">Years of Experience</span>
+            </div>
+            <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="80">
+                <span class="stat-num">8+</span>
+                <span class="stat-lbl">Industry Sectors</span>
+            </div>
+            <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="160">
+                <span class="stat-num">11</span>
+                <span class="stat-lbl">Machines</span>
+            </div>
+            <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="240">
+                <span class="stat-num">ISO</span>
+                <span class="stat-lbl">9001:2015 Certified</span>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Company Overview -->
-<section class="section-py">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <!-- Left: Image -->
-            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                <div class="position-relative overflow-hidden rounded">
-                    <img src="img/product-3.jpeg" alt="Precision CNC Machined Components — Pandurang Auto Industries" class="img-fluid w-100" style="object-fit:cover;max-height:480px;display:block;">
-                    <!-- 23yr badge — hidden on mobile via CSS -->
-                    <div class="about-badge-exp position-absolute bottom-0 start-0 m-3">
-                        <div class="d-flex flex-column align-items-center justify-content-center text-white rounded shadow" style="width:100px;height:100px;background:linear-gradient(135deg,#1B3A6B,#2A5298);">
-                            <span style="font-size:1.9rem;font-weight:800;line-height:1;">23<span style="font-size:0.9rem;font-weight:600;">+</span></span>
-                            <span style="font-size:0.68rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;text-align:center;line-height:1.2;margin-top:4px;">Years of<br>Experience</span>
-                        </div>
-                    </div>
-                    <!-- ISO badge — hidden on mobile via CSS -->
-                    <div class="about-badge-iso position-absolute top-0 end-0 m-3">
-                        <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded shadow" style="background:rgba(255,255,255,0.95);">
-                            <i class="bi bi-patch-check-fill" style="color:#1B3A6B;font-size:1rem;"></i>
-                            <span style="font-size:0.75rem;font-weight:700;color:#0F1F38;">ISO 9001:2015</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Right: Description -->
-            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                <span class="section-title">Who We Are</span>
-                <h2 class="section-heading">Precision Manufacturing You Can Trust</h2>
-                <div class="section-divider"></div>
-                <p class="mb-3" style="color:#4B5563;line-height:1.8;">
-                    Pandurang Auto Industries is an ISO 9001:2015 certified company. Specialized in High precision machining facility. We are a custom CNC machined parts manufacturer specializing in precision VMC services for a wide range of industries.
-                </p>
-                <p class="mb-3" style="color:#4B5563;line-height:1.8;">
-                    With over 23 years of experience, our team delivers high-quality machined components with tight tolerances, reliable turnaround times, and exceptional attention to detail. We specialize in Mass production and Batch production parts, helping our customers move quickly from design to finished component.
-                </p>
-                <p class="mb-4" style="color:#4B5563;line-height:1.8;">
-                    Pandurang Auto Industries is committed to deliver precision, quality, and dependable service.
-                </p>
-                <ul class="check-list mb-4">
-                    <li>ISO 9001:2015 Certified Quality Management System</li>
-                    <li>Advanced CNC &amp; VMC Machining Facility</li>
-                    <li>Mass Production &amp; Batch Production Capabilities</li>
-                    <li>Tight Tolerances with Consistent Repeatability</li>
-                    <li>Serving Multiple Industries from MIDC Chinchwad, Pune</li>
-                </ul>
-                <a href="contact.html" class="btn btn-primary px-4 py-2">Request a Quote</a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Vision & Mission -->
-<section class="section-py" style="background:#F4F6FA;">
+<section class="vm-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
-            <div class="col-lg-7 text-center wow fadeInUp" data-wow-delay="0.1s">
-                <span class="section-title">Our Direction</span>
-                <h2 class="section-heading">Vision &amp; Mission</h2>
-                <div class="section-divider mx-auto"></div>
+            <div class="col-lg-7 text-center" data-aos="fade-up">
+                <span class="sec-eyebrow">Our Direction</span>
+                <h2 class="sec-h2">Vision &amp; Mission</h2>
+                <div class="sec-rule mx-auto"></div>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
-            <!-- Vision -->
-            <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="h-100 p-4 p-lg-5 bg-white rounded shadow-sm" style="border-top:4px solid #2563eb;">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="d-flex align-items-center justify-content-center rounded-circle me-3 flex-shrink-0" style="width:56px;height:56px;background:linear-gradient(135deg,#1d4ed8,#2563eb);">
-                            <i class="bi bi-eye-fill text-white" style="font-size:1.4rem;"></i>
-                        </div>
-                        <h3 class="mb-0" style="font-size:1.3rem;font-weight:700;color:#0F1F38;">Our Vision</h3>
-                    </div>
-                    <p style="color:#4B5563;line-height:1.85;font-size:1rem;">
-                        "To be the customers first choice by implementing best manufacturing practices with engineering excellence."
-                    </p>
+            <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="vm-card">
+                    <div class="vm-icon-wrap"><i class="bi bi-eye-fill"></i></div>
+                    <div class="vm-title">Our Vision</div>
+                    <p class="vm-text">"To be the customers first choice by implementing best manufacturing practices with engineering excellence."</p>
                 </div>
             </div>
-            <!-- Mission -->
-            <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="h-100 p-4 p-lg-5 bg-white rounded shadow-sm" style="border-top:4px solid #2563eb;">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="d-flex align-items-center justify-content-center rounded-circle me-3 flex-shrink-0" style="width:56px;height:56px;background:linear-gradient(135deg,#1d4ed8,#2563eb);">
-                            <i class="bi bi-bullseye text-white" style="font-size:1.4rem;"></i>
-                        </div>
-                        <h3 class="mb-0" style="font-size:1.3rem;font-weight:700;color:#0F1F38;">Our Mission</h3>
-                    </div>
-                    <p style="color:#4B5563;line-height:1.85;font-size:1rem;">
-                        "Our mission is to deliver high-quality, cost-effective products to our customers by using advanced manufacturing practices."
-                    </p>
+            <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="vm-card">
+                    <div class="vm-icon-wrap"><i class="bi bi-bullseye"></i></div>
+                    <div class="vm-title">Our Mission</div>
+                    <p class="vm-text">"Our mission is to deliver high-quality, cost-effective products to our customers by using advanced manufacturing practices."</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Materials We Machine -->
-<section class="section-py">
+<!-- Materials -->
+<section class="materials-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
-            <div class="col-lg-7 text-center wow fadeInUp" data-wow-delay="0.1s">
-                <span class="section-title">Material Expertise</span>
-                <h2 class="section-heading">Materials We Machine</h2>
-                <div class="section-divider mx-auto"></div>
-                <p class="mt-3" style="color:#4B5563;">We work with a wide range of metals and alloys to meet the exact demands of every application and industry.</p>
+            <div class="col-lg-7 text-center" data-aos="fade-up">
+                <span class="sec-eyebrow">Material Expertise</span>
+                <h2 class="sec-h2">Materials We Machine</h2>
+                <div class="sec-rule mx-auto"></div>
+                <p style="color:#6B7280;margin-top:8px;">We work with a wide range of metals and alloys to meet exact demands of every application and industry.</p>
             </div>
         </div>
-        <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-            <div class="col-12">
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <!-- Aluminum -->
-                    <div class="d-flex align-items-center gap-2 px-4 py-3 rounded border" style="background:#fff;border-color:#DBEAFE !important;min-width:160px;">
-                        <i class="bi bi-hexagon-fill" style="color:#2563eb;font-size:1.1rem;"></i>
-                        <span style="font-weight:600;color:#0F1F38;font-size:0.95rem;">Aluminum</span>
-                    </div>
-                    <!-- Alloy Steel -->
-                    <div class="d-flex align-items-center gap-2 px-4 py-3 rounded border" style="background:#fff;border-color:#DBEAFE !important;min-width:160px;">
-                        <i class="bi bi-hexagon-fill" style="color:#2563eb;font-size:1.1rem;"></i>
-                        <span style="font-weight:600;color:#0F1F38;font-size:0.95rem;">Alloy Steel</span>
-                    </div>
-                    <!-- Super Alloys -->
-                    <div class="d-flex align-items-center gap-2 px-4 py-3 rounded border" style="background:#fff;border-color:#DBEAFE !important;min-width:160px;">
-                        <i class="bi bi-hexagon-fill" style="color:#2563eb;font-size:1.1rem;"></i>
-                        <span style="font-weight:600;color:#0F1F38;font-size:0.95rem;">Super Alloys</span>
-                    </div>
-                    <!-- Stainless Steel -->
-                    <div class="d-flex align-items-center gap-2 px-4 py-3 rounded border" style="background:#fff;border-color:#DBEAFE !important;min-width:160px;">
-                        <i class="bi bi-hexagon-fill" style="color:#2563eb;font-size:1.1rem;"></i>
-                        <span style="font-weight:600;color:#0F1F38;font-size:0.95rem;">Stainless Steel</span>
-                    </div>
-                    <!-- Hardened Steel -->
-                    <div class="d-flex align-items-center gap-2 px-4 py-3 rounded border" style="background:#fff;border-color:#DBEAFE !important;min-width:160px;">
-                        <i class="bi bi-hexagon-fill" style="color:#2563eb;font-size:1.1rem;"></i>
-                        <span style="font-weight:600;color:#0F1F38;font-size:0.95rem;">Hardened Steel</span>
-                    </div>
-                    <!-- Brass -->
-                    <div class="d-flex align-items-center gap-2 px-4 py-3 rounded border" style="background:#fff;border-color:#DBEAFE !important;min-width:160px;">
-                        <i class="bi bi-hexagon-fill" style="color:#2563eb;font-size:1.1rem;"></i>
-                        <span style="font-weight:600;color:#0F1F38;font-size:0.95rem;">Brass</span>
-                    </div>
-                    <!-- Copper -->
-                    <div class="d-flex align-items-center gap-2 px-4 py-3 rounded border" style="background:#fff;border-color:#DBEAFE !important;min-width:160px;">
-                        <i class="bi bi-hexagon-fill" style="color:#2563eb;font-size:1.1rem;"></i>
-                        <span style="font-weight:600;color:#0F1F38;font-size:0.95rem;">Copper</span>
-                    </div>
-                </div>
-            </div>
+        <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up" data-aos-delay="80">
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Aluminum</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Alloy Steel</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Super Alloys</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Stainless Steel</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Hardened Steel</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Brass</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Copper</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>EN Series Steel</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Carbon Steel</span>
+            <span class="mat-pill"><i class="bi bi-circle-fill"></i>Tool Steel</span>
         </div>
     </div>
 </section>
 
 <!-- Sectors We Serve -->
-<section class="section-py" style="background:#F4F6FA;">
+<section class="sectors-section">
     <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-lg-7 text-center wow fadeInUp" data-wow-delay="0.1s">
-                <span class="section-title">Industries</span>
-                <h2 class="section-heading">Sectors We Serve</h2>
-                <div class="section-divider mx-auto"></div>
-                <p class="mt-3" style="color:#4B5563;">Our precision machining capabilities span across a diverse range of industries, delivering reliable components for critical applications.</p>
+        <div class="row justify-content-between align-items-end mb-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <span class="sec-eyebrow">Industries</span>
+                <h2 class="sec-h2">Sectors We Serve</h2>
+                <div class="sec-rule"></div>
+                <p style="color:#6B7280;">Precision machining across a diverse range of industries — delivering reliable components for critical applications.</p>
+            </div>
+            <div class="col-lg-auto" data-aos="fade-left">
+                <a href="services.html" style="font-size:.86rem;font-weight:700;color:#1B3A6B;text-decoration:none;display:inline-flex;align-items:center;gap:6px;">View All Services <i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
         <div class="row g-4">
-            <!-- Automobile Industries -->
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="solution-card h-100 text-center p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-3 mx-auto" style="width:60px;height:60px;background:linear-gradient(135deg,#1d4ed8,#2563eb);border-radius:12px;">
-                        <i class="bi bi-car-front-fill text-white" style="font-size:1.5rem;"></i>
-                    </div>
-                    <h5 style="font-size:0.95rem;font-weight:700;color:#0F1F38;margin-bottom:0.5rem;">Automobile Industries</h5>
-                    <p style="font-size:0.82rem;color:#6B7280;margin-bottom:0;">High-precision components for automotive assemblies and systems.</p>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="sector-card"><div class="sc-icon"><i class="bi bi-car-front-fill"></i></div><div class="sc-title">Automobile Industries</div><p class="sc-desc">High-precision components for automotive assemblies and systems.</p></div>
             </div>
-            <!-- Hydraulic Application -->
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.15s">
-                <div class="solution-card h-100 text-center p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-3 mx-auto" style="width:60px;height:60px;background:linear-gradient(135deg,#1d4ed8,#2563eb);border-radius:12px;">
-                        <i class="bi bi-droplet-half text-white" style="font-size:1.5rem;"></i>
-                    </div>
-                    <h5 style="font-size:0.95rem;font-weight:700;color:#0F1F38;margin-bottom:0.5rem;">Hydraulic Application</h5>
-                    <p style="font-size:0.82rem;color:#6B7280;margin-bottom:0;">Precision parts for hydraulic cylinders, valves, and fittings.</p>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+                <div class="sector-card"><div class="sc-icon"><i class="bi bi-droplet-fill"></i></div><div class="sc-title">Hydraulic Applications</div><p class="sc-desc">Precision parts for hydraulic cylinders, valves, and fittings.</p></div>
             </div>
-            <!-- Pump And Valve Industries -->
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="solution-card h-100 text-center p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-3 mx-auto" style="width:60px;height:60px;background:linear-gradient(135deg,#1d4ed8,#2563eb);border-radius:12px;">
-                        <i class="bi bi-gear-wide-connected text-white" style="font-size:1.5rem;"></i>
-                    </div>
-                    <h5 style="font-size:0.95rem;font-weight:700;color:#0F1F38;margin-bottom:0.5rem;">Pump &amp; Valve Industries</h5>
-                    <p style="font-size:0.82rem;color:#6B7280;margin-bottom:0;">Critical components for fluid handling and control applications.</p>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="sector-card"><div class="sc-icon"><i class="bi bi-gear-wide-connected"></i></div><div class="sc-title">Pump &amp; Valve Industries</div><p class="sc-desc">Critical components for fluid handling and control applications.</p></div>
             </div>
-            <!-- Electronic Industries -->
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.25s">
-                <div class="solution-card h-100 text-center p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-3 mx-auto" style="width:60px;height:60px;background:linear-gradient(135deg,#1d4ed8,#2563eb);border-radius:12px;">
-                        <i class="bi bi-cpu-fill text-white" style="font-size:1.5rem;"></i>
-                    </div>
-                    <h5 style="font-size:0.95rem;font-weight:700;color:#0F1F38;margin-bottom:0.5rem;">Electronic Industries</h5>
-                    <p style="font-size:0.82rem;color:#6B7280;margin-bottom:0;">Tight-tolerance machined parts for electronic enclosures and housings.</p>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                <div class="sector-card"><div class="sc-icon"><i class="bi bi-cpu-fill"></i></div><div class="sc-title">Electronic Industries</div><p class="sc-desc">Tight-tolerance machined parts for electronic enclosures and housings.</p></div>
             </div>
-            <!-- Industrial Products -->
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="solution-card h-100 text-center p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-3 mx-auto" style="width:60px;height:60px;background:linear-gradient(135deg,#1d4ed8,#2563eb);border-radius:12px;">
-                        <i class="bi bi-tools text-white" style="font-size:1.5rem;"></i>
-                    </div>
-                    <h5 style="font-size:0.95rem;font-weight:700;color:#0F1F38;margin-bottom:0.5rem;">Industrial Products</h5>
-                    <p style="font-size:0.82rem;color:#6B7280;margin-bottom:0;">Custom machined components for general industrial machinery and equipment.</p>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="sector-card"><div class="sc-icon"><i class="bi bi-tools"></i></div><div class="sc-title">Industrial Products</div><p class="sc-desc">Custom machined components for general industrial machinery and equipment.</p></div>
             </div>
-            <!-- Non-Automotive Industries -->
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.35s">
-                <div class="solution-card h-100 text-center p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-3 mx-auto" style="width:60px;height:60px;background:linear-gradient(135deg,#1d4ed8,#2563eb);border-radius:12px;">
-                        <i class="bi bi-building text-white" style="font-size:1.5rem;"></i>
-                    </div>
-                    <h5 style="font-size:0.95rem;font-weight:700;color:#0F1F38;margin-bottom:0.5rem;">Non-Automotive Industries</h5>
-                    <p style="font-size:0.82rem;color:#6B7280;margin-bottom:0;">Versatile solutions for a broad spectrum of non-automotive segments.</p>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+                <div class="sector-card"><div class="sc-icon"><i class="bi bi-building"></i></div><div class="sc-title">Non-Automotive Industries</div><p class="sc-desc">Versatile solutions for a broad spectrum of non-automotive segments.</p></div>
             </div>
-            <!-- Oil & Gas Industry -->
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="solution-card h-100 text-center p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-3 mx-auto" style="width:60px;height:60px;background:linear-gradient(135deg,#1d4ed8,#2563eb);border-radius:12px;">
-                        <i class="bi bi-fuel-pump-fill text-white" style="font-size:1.5rem;"></i>
-                    </div>
-                    <h5 style="font-size:0.95rem;font-weight:700;color:#0F1F38;margin-bottom:0.5rem;">Oil &amp; Gas Industry</h5>
-                    <p style="font-size:0.82rem;color:#6B7280;margin-bottom:0;">Robust machined parts engineered for demanding oil and gas environments.</p>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="sector-card"><div class="sc-icon"><i class="bi bi-fuel-pump-fill"></i></div><div class="sc-title">Oil &amp; Gas Industry</div><p class="sc-desc">Robust machined parts engineered for demanding oil and gas environments.</p></div>
             </div>
-            <!-- Energy & Power Sector -->
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.45s">
-                <div class="solution-card h-100 text-center p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-3 mx-auto" style="width:60px;height:60px;background:linear-gradient(135deg,#1d4ed8,#2563eb);border-radius:12px;">
-                        <i class="bi bi-lightning-charge-fill text-white" style="font-size:1.5rem;"></i>
-                    </div>
-                    <h5 style="font-size:0.95rem;font-weight:700;color:#0F1F38;margin-bottom:0.5rem;">Energy &amp; Power Sector</h5>
-                    <p style="font-size:0.82rem;color:#6B7280;margin-bottom:0;">Reliable components for energy generation and power distribution systems.</p>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                <div class="sector-card"><div class="sc-icon"><i class="bi bi-lightning-charge-fill"></i></div><div class="sc-title">Energy &amp; Power Sector</div><p class="sc-desc">Reliable components for energy generation and power distribution systems.</p></div>
             </div>
-        </div>
-        <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.1s">
-            <a href="solutions.html" class="btn btn-primary px-5 py-2">Explore All Solutions</a>
         </div>
     </div>
 </section>
 
 <!-- Why Choose Us -->
-<section class="section-py">
+<section class="whyus-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
-            <div class="col-lg-7 text-center wow fadeInUp" data-wow-delay="0.1s">
-                <span class="section-title">Our Advantage</span>
-                <h2 class="section-heading">Why Choose Pandurang Auto Industries</h2>
-                <div class="section-divider mx-auto"></div>
-                <p class="mt-3" style="color:#4B5563;">Backed by decades of experience and a commitment to quality, we deliver value at every step of the manufacturing process.</p>
+            <div class="col-lg-7 text-center" data-aos="fade-up">
+                <span class="sec-eyebrow">Our Advantage</span>
+                <h2 class="sec-h2">Why Choose Pandurang Auto Industries</h2>
+                <div class="sec-rule mx-auto"></div>
+                <p style="color:#6B7280;margin-top:8px;">Backed by decades of experience and a commitment to quality, we deliver value at every step.</p>
             </div>
         </div>
         <div class="row g-4">
-            <!-- ISO Quality -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="h-100 p-4 bg-white rounded border" style="border-color:#DBEAFE !important;">
-                    <div class="d-flex align-items-start gap-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded" style="width:48px;height:48px;background:#EFF6FF;">
-                            <i class="bi bi-patch-check-fill" style="color:#2563eb;font-size:1.4rem;"></i>
-                        </div>
-                        <div>
-                            <h5 style="font-size:1rem;font-weight:700;color:#0F1F38;margin-bottom:0.4rem;">ISO 9001:2015 Certified Quality</h5>
-                            <p style="font-size:0.87rem;color:#6B7280;margin-bottom:0;line-height:1.7;">Our ISO 9001:2015 certified quality management system ensures every component meets stringent international standards consistently.</p>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="wu-card">
+                    <div class="wu-num">01</div>
+                    <div class="wu-icon"><i class="bi bi-patch-check-fill"></i></div>
+                    <div class="wu-title">ISO 9001:2015 Certified Quality</div>
+                    <p class="wu-desc">Our certified QMS ensures every component meets stringent international standards consistently.</p>
                 </div>
             </div>
-            <!-- Advanced Infrastructure -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
-                <div class="h-100 p-4 bg-white rounded border" style="border-color:#DBEAFE !important;">
-                    <div class="d-flex align-items-start gap-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded" style="width:48px;height:48px;background:#EFF6FF;">
-                            <i class="bi bi-building-gear" style="color:#2563eb;font-size:1.4rem;"></i>
-                        </div>
-                        <div>
-                            <h5 style="font-size:1rem;font-weight:700;color:#0F1F38;margin-bottom:0.4rem;">Advanced Manufacturing Infrastructure</h5>
-                            <p style="font-size:0.87rem;color:#6B7280;margin-bottom:0;line-height:1.7;">Equipped with modern CNC and VMC machining centres, our facility supports both mass and batch production with high accuracy.</p>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+                <div class="wu-card">
+                    <div class="wu-num">02</div>
+                    <div class="wu-icon"><i class="bi bi-building-gear"></i></div>
+                    <div class="wu-title">Advanced Manufacturing Infrastructure</div>
+                    <p class="wu-desc">Modern CNC and VMC machining centres supporting both mass and batch production with high accuracy.</p>
                 </div>
             </div>
-            <!-- Skilled Team -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="h-100 p-4 bg-white rounded border" style="border-color:#DBEAFE !important;">
-                    <div class="d-flex align-items-start gap-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded" style="width:48px;height:48px;background:#EFF6FF;">
-                            <i class="bi bi-people-fill" style="color:#2563eb;font-size:1.4rem;"></i>
-                        </div>
-                        <div>
-                            <h5 style="font-size:1rem;font-weight:700;color:#0F1F38;margin-bottom:0.4rem;">Experienced &amp; Skilled Team</h5>
-                            <p style="font-size:0.87rem;color:#6B7280;margin-bottom:0;line-height:1.7;">With 23+ years in precision machining, our experienced engineers and machinists bring deep technical expertise to every job.</p>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+                <div class="wu-card">
+                    <div class="wu-num">03</div>
+                    <div class="wu-icon"><i class="bi bi-people-fill"></i></div>
+                    <div class="wu-title">23+ Years Experience</div>
+                    <p class="wu-desc">Deep technical expertise from over two decades of hands-on precision manufacturing.</p>
                 </div>
             </div>
-            <!-- Consistent Precision -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.25s">
-                <div class="h-100 p-4 bg-white rounded border" style="border-color:#DBEAFE !important;">
-                    <div class="d-flex align-items-start gap-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded" style="width:48px;height:48px;background:#EFF6FF;">
-                            <i class="bi bi-crosshair" style="color:#2563eb;font-size:1.4rem;"></i>
-                        </div>
-                        <div>
-                            <h5 style="font-size:1rem;font-weight:700;color:#0F1F38;margin-bottom:0.4rem;">Consistent Precision &amp; Tight Tolerances</h5>
-                            <p style="font-size:0.87rem;color:#6B7280;margin-bottom:0;line-height:1.7;">Our machining processes maintain tight tolerances and repeatable precision across every production run, large or small.</p>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="wu-card">
+                    <div class="wu-num">04</div>
+                    <div class="wu-icon"><i class="bi bi-bullseye"></i></div>
+                    <div class="wu-title">Tight Tolerance Reliability</div>
+                    <p class="wu-desc">Rigorous in-process inspection maintains tight tolerances across every production run.</p>
                 </div>
             </div>
-            <!-- Cost-Effective -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="h-100 p-4 bg-white rounded border" style="border-color:#DBEAFE !important;">
-                    <div class="d-flex align-items-start gap-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded" style="width:48px;height:48px;background:#EFF6FF;">
-                            <i class="bi bi-currency-rupee" style="color:#2563eb;font-size:1.4rem;"></i>
-                        </div>
-                        <div>
-                            <h5 style="font-size:1rem;font-weight:700;color:#0F1F38;margin-bottom:0.4rem;">Cost-Effective Manufacturing</h5>
-                            <p style="font-size:0.87rem;color:#6B7280;margin-bottom:0;line-height:1.7;">We deliver high-quality components at competitive prices by optimizing processes and minimising waste, giving customers real value.</p>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+                <div class="wu-card">
+                    <div class="wu-num">05</div>
+                    <div class="wu-icon"><i class="bi bi-currency-rupee"></i></div>
+                    <div class="wu-title">Cost-Effective Solutions</div>
+                    <p class="wu-desc">Competitive pricing without compromising quality — helping you from design to finished component.</p>
                 </div>
             </div>
-            <!-- Customer Support -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.35s">
-                <div class="h-100 p-4 bg-white rounded border" style="border-color:#DBEAFE !important;">
-                    <div class="d-flex align-items-start gap-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded" style="width:48px;height:48px;background:#EFF6FF;">
-                            <i class="bi bi-headset" style="color:#2563eb;font-size:1.4rem;"></i>
-                        </div>
-                        <div>
-                            <h5 style="font-size:1rem;font-weight:700;color:#0F1F38;margin-bottom:0.4rem;">Responsive Customer Support</h5>
-                            <p style="font-size:0.87rem;color:#6B7280;margin-bottom:0;line-height:1.7;">We maintain open communication from enquiry through delivery, ensuring timely updates and quick resolution of any requirements.</p>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+                <div class="wu-card">
+                    <div class="wu-num">06</div>
+                    <div class="wu-icon"><i class="bi bi-headset"></i></div>
+                    <div class="wu-title">Strong Customer Support</div>
+                    <p class="wu-desc">Responsive communication and reliable after-delivery service — building long-term partnerships.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Product Gallery Strip -->
-<section class="section-py-sm" style="background:#F4F6FA;">
-    <div class="container">
-        <div class="row g-3">
-            <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
-                <img src="img/product-2.jpeg" alt="CNC Machined Component" class="img-fluid rounded" style="width:100%;height:180px;object-fit:cover;">
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container" style="position:relative;z-index:1;">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h2 class="cta-heading">Ready to Start<br>Your Next Project?</h2>
+                <p class="cta-sub">Tell us your machining requirements and get a competitive quote. We serve industries across Pune, Maharashtra and beyond.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="contact.html" class="cta-btn-white">Get In Touch</a>
+                    <a href="tel:+919922589835" class="cta-btn-outline"><i class="fa fa-phone-alt me-2"></i>Call Us Now</a>
+                </div>
             </div>
-            <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.15s">
-                <img src="img/product-8.jpeg" alt="Precision VMC Part" class="img-fluid rounded" style="width:100%;height:180px;object-fit:cover;">
-            </div>
-            <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
-                <img src="img/product-14.jpeg" alt="Machined Metal Component" class="img-fluid rounded" style="width:100%;height:180px;object-fit:cover;">
-            </div>
-            <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.25s">
-                <img src="img/product-15.jpeg" alt="High Precision Part" class="img-fluid rounded" style="width:100%;height:180px;object-fit:cover;">
+            <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-delay="100">
+                <div class="cta-info-card">
+                    <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-geo-alt-fill"></i></div><div><div class="cta-info-label">Address</div><div class="cta-info-value">Plot No: 3B+3, Plot No:22, "D1" Block,<br>Akurdi Industrial Estate, MIDC Chinchwad,<br>Pune 411019</div></div></div>
+                    <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-telephone-fill"></i></div><div><div class="cta-info-label">Phone</div><div class="cta-info-value"><a href="tel:+919922589835">+91 99225 89835</a> — Mr. S.S. Kolte<br><a href="tel:+919325776868">+91 93257 76868</a> — Pranita Kolte</div></div></div>
+                    <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-envelope-fill"></i></div><div><div class="cta-info-label">Email</div><div class="cta-info-value"><a href="mailto:pandurangauto98@gmail.com">pandurangauto98@gmail.com</a></div></div></div>
+                    <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-clock-fill"></i></div><div><div class="cta-info-label">Availability</div><div class="cta-info-value">24 Hours / 7 Days</div></div></div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- CTA Banner -->
-<div class="cta-banner">
-    <div class="container">
-        <div class="row align-items-center g-4">
-            <div class="col-lg-8 wow fadeInLeft" data-wow-delay="0.1s">
-                <h2 class="mb-2">Ready to Work With Us?</h2>
-                <p class="mb-0">Get in touch with our team today to discuss your precision machining requirements. We serve customers across multiple industries from our facility in MIDC Chinchwad, Pune.</p>
-            </div>
-            <div class="col-lg-4 text-lg-end wow fadeInRight" data-wow-delay="0.2s">
-                <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 me-2 mb-2 mb-lg-0" style="font-weight:600;color:#2563eb;">Get a Quote</a>
-                <a href="tel:+919922589835" class="btn btn-outline-light btn-lg px-4 py-3 mb-2 mb-lg-0" style="font-weight:600;">Call Us Now</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Footer -->
-<footer>
+<footer class="site-footer">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-4">
-                <div class="footer-brand-text mb-3">PAI<span>.</span></div>
-                <p>Pandurang Auto Industries is an ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components, serving multiple industries from MIDC Chinchwad, Pune.</p>
-                <div class="mt-4">
-                    <span style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);">ISO Certified</span>
-                    <div class="mt-2 d-inline-flex align-items-center gap-2 px-3 py-2 border border-secondary rounded" style="border-color:rgba(255,255,255,0.15) !important;">
-                        <i class="bi bi-patch-check-fill" style="color:#93C5FD;font-size:1.1rem;"></i>
-                        <span style="font-size:0.82rem;font-weight:600;color:#fff;">ISO 9001:2015</span>
-                    </div>
+                <span class="footer-brand-text">PAI<span>.</span></span>
+                <p style="line-height:1.8;max-width:300px;">ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components — serving multiple industries from MIDC Chinchwad, Pune.</p>
+                <div class="mt-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
+                    <i class="bi bi-patch-check-fill" style="color:#93C5FD;font-size:1.1rem;"></i>
+                    <span style="font-size:.82rem;font-weight:600;color:#fff;">ISO 9001:2015 Certified</span>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-2">
-                <h6>Quick Links</h6>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="facilities.html">Facilities</a></li>
-                    <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="clients.html">Clients</a></li>
+                <div class="footer-heading">Quick Links</div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li><li><a href="facilities.html">Facilities</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <h6>Solutions</h6>
-                <ul>
-                    <li><a href="solutions.html">Automobile Industries</a></li>
-                    <li><a href="solutions.html">Hydraulic Applications</a></li>
-                    <li><a href="solutions.html">Pump &amp; Valve Industries</a></li>
-                    <li><a href="solutions.html">Electronic Industries</a></li>
-                    <li><a href="solutions.html">Oil &amp; Gas Industry</a></li>
-                    <li><a href="solutions.html">Energy &amp; Power Sector</a></li>
-                    <li><a href="solutions.html">Industrial Products</a></li>
-                    <li><a href="solutions.html">Non-Automotive Segments</a></li>
+                <div class="footer-heading">Services</div>
+                <ul class="footer-links">
+                    <li><a href="services.html">Automobile Industries</a></li>
+                    <li><a href="services.html">Hydraulic Applications</a></li>
+                    <li><a href="services.html">Pump &amp; Valve Industries</a></li>
+                    <li><a href="services.html">Electronic Industries</a></li>
+                    <li><a href="services.html">Oil &amp; Gas Industry</a></li>
+                    <li><a href="services.html">Energy &amp; Power Sector</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
-                <h6>Contact Us</h6>
-                <div class="footer-contact-item">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <span>Plot No: 3B+3, Plot No:22, "D1" Block, Akurdi Industrial Estate, Opp. Ador Welding Company, MIDC Chinchwad, Pune 411019</span>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="bi bi-telephone-fill"></i>
-                    <div>
-                        <a href="tel:+919922589835" style="color:rgba(255,255,255,0.65);text-decoration:none;display:block;">+91 99225 89835 (Mr. S.S. Kolte)</a>
-                        <a href="tel:+919325776868" style="color:rgba(255,255,255,0.65);text-decoration:none;display:block;">+91 93257 76868 (Pranita Kolte)</a>
-                    </div>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="bi bi-envelope-fill"></i>
-                    <a href="mailto:pandurangauto98@gmail.com" style="color:rgba(255,255,255,0.65);text-decoration:none;">pandurangauto98@gmail.com</a>
-                </div>
+                <div class="footer-heading">Contact Us</div>
+                <div class="footer-contact-row"><i class="bi bi-geo-alt-fill"></i><span>Plot No: 3B+3, "D1" Block, Akurdi Industrial Estate, MIDC Chinchwad, Pune 411019</span></div>
+                <div class="footer-contact-row"><i class="bi bi-telephone-fill"></i><div><a href="tel:+919922589835" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 99225 89835</a><a href="tel:+919325776868" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 93257 76868</a></div></div>
+                <div class="footer-contact-row"><i class="bi bi-envelope-fill"></i><a href="mailto:pandurangauto98@gmail.com" style="color:rgba(255,255,255,.55);text-decoration:none;">pandurangauto98@gmail.com</a></div>
             </div>
         </div>
     </div>
-    <div class="footer-bottom">
-        <div class="container">
-            &copy; 2025 Pandurang Auto Industries. All Rights Reserved. &middot; <a href="https://www.pandurangautoindustries.in" style="color:rgba(255,255,255,0.35);text-decoration:none;">pandurangautoindustries.in</a> &middot; MIDC Chinchwad, Pune, Maharashtra, India
-        </div>
-    </div>
+    <div class="footer-bottom"><div class="container">&copy; 2025 Pandurang Auto Industries. All Rights Reserved. &nbsp;&middot;&nbsp; <a href="https://www.pandurangautoindustries.in">pandurangautoindustries.in</a> &nbsp;&middot;&nbsp; MIDC Chinchwad, Pune, Maharashtra</div></div>
 </footer>
 
-<a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-<script>new WOW().init();</script>
-</body></html>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 700, once: true, offset: 60 });
+const nav = document.getElementById('siteNav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+const btt = document.getElementById('backToTop');
+window.addEventListener('scroll', () => { btt.classList.toggle('show', window.scrollY > 300); });
+btt.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+</script>
+</body>
+</html>
