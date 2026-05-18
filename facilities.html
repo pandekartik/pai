@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Facilities — Pandurang Auto Industries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pandurang Auto Industries facilities — CNC machines, VMC machines, surface grinding, wire cut, Traub machines, and precision inspection instruments at our MIDC Chinchwad, Pune facility.">
+    <link rel="canonical" href="https://www.pandurangautoindustries.in/facilities.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+/* ── Variables ── */
+:root {
+    --primary: #1B3A6B;
+    --primary-light: #2A5298;
+    --dark: #0d1f3c;
+    --text: #374151;
+    --muted: #6B7280;
+    --border: #E8EDF5;
+    --bg-light: #F7F9FC;
+    --accent: #93C5FD;
+}
+*, body { font-family: 'Geist', sans-serif; }
+body { color: var(--text); background: #fff; }
+
+/* ── Shared: Topbar ── */
+.topbar-strip { background: #0d1f3c; font-size: 0.76rem; padding: 7px 0; }
+.topbar-strip a { color: rgba(255,255,255,.7); text-decoration: none; transition: .2s; }
+.topbar-strip a:hover { color: #fff; }
+
+/* ── Shared: Nav ── */
+.site-nav { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 1px 0 var(--border); transition: box-shadow .3s; }
+.site-nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
+.site-nav .navbar-brand-wrapper { background: var(--primary); padding: 14px 28px 14px 24px; clip-path: polygon(0 0,calc(100% - 14px) 0,100% 100%,0 100%); margin-right: 16px; }
+.site-nav .navbar-brand-text { font-weight: 800; font-size: 1.35rem; color: #fff; letter-spacing: -0.02em; line-height: 1; }
+.site-nav .navbar-brand-text span { color: var(--accent); }
+.site-nav .nav-link { font-size: .88rem; font-weight: 500; color: var(--dark) !important; padding: 24px 15px !important; position: relative; transition: color .2s; }
+.site-nav .nav-link::after { content: ''; position: absolute; bottom: 14px; left: 15px; right: 15px; height: 2px; background: var(--primary); transform: scaleX(0); transition: transform .25s; border-radius: 2px; }
+.site-nav .nav-link:hover::after, .site-nav .nav-link.active::after { transform: scaleX(1); }
+.site-nav .nav-link:hover { color: var(--primary) !important; }
+.site-nav .btn-quote { background: var(--primary); color: #fff; font-size: .83rem; font-weight: 700; padding: 10px 24px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, transform .2s; white-space: nowrap; border: none; }
+.site-nav .btn-quote:hover { background: var(--primary-light); transform: translateY(-1px); color: #fff; }
+.site-nav .navbar-toggler { border-color: #ccc; }
+@media (max-width: 991px) {
+    .site-nav .nav-link { padding: 12px 16px !important; }
+    .site-nav .nav-link::after { display: none; }
+}
+
+/* ── Page Hero ── */
+.page-hero {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 56px 0 48px;
+    position: relative;
+    overflow: hidden;
+}
+.page-hero::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 40%;
+    background: linear-gradient(to right, transparent, #F0F5FF);
+    pointer-events: none;
+}
+.page-hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #EEF4FF; border: 1px solid #C7D9F7;
+    color: var(--primary); font-size: .72rem; font-weight: 700;
+    letter-spacing: .14em; text-transform: uppercase;
+    padding: 5px 14px; border-radius: 100px; margin-bottom: 16px;
+}
+.page-hero h1 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 800; color: var(--dark);
+    letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px;
+}
+.page-hero-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 560px; }
+.breadcrumb { background: none; padding: 0; margin: 16px 0 0; }
+.breadcrumb-item a { color: var(--primary); text-decoration: none; font-size: .82rem; }
+.breadcrumb-item.active { color: var(--muted); font-size: .82rem; }
+.breadcrumb-item + .breadcrumb-item::before { color: #CBD5E1; }
+
+/* ── Section Labels ── */
+.sec-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 10px; }
+.sec-h2 { font-size: clamp(1.7rem, 2.8vw, 2.3rem); font-weight: 800; color: var(--dark); letter-spacing: -0.025em; line-height: 1.2; margin-bottom: 14px; }
+.sec-rule { width: 44px; height: 4px; background: var(--primary); border-radius: 2px; margin-bottom: 24px; }
+
+/* ── Buttons ── */
+.btn-pai { background: var(--primary); color: #fff; font-weight: 700; font-size: .88rem; letter-spacing: .04em; padding: 13px 32px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, transform .2s, box-shadow .2s; border: none; }
+.btn-pai:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(27,58,107,.3); color: #fff; }
+.btn-pai-outline { background: transparent; color: var(--primary); border: 1.5px solid var(--primary); font-weight: 600; font-size: .88rem; padding: 12px 28px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, color .2s, transform .2s; }
+.btn-pai-outline:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+
+/* ── Overview Section ── */
+.overview-section { padding: 96px 0; background: #fff; }
+.img-wrap { position: relative; border-radius: 16px; overflow: hidden; }
+.img-wrap img { width: 100%; height: 480px; object-fit: cover; display: block; }
+.img-badge {
+    position: absolute; background: var(--primary);
+    color: #fff; padding: 18px 22px; border-radius: 12px;
+    text-align: center; box-shadow: 0 8px 32px rgba(27,58,107,.35);
+}
+.img-badge.bottom-left { bottom: 28px; left: -18px; }
+.img-badge .num { font-size: 2.2rem; font-weight: 800; line-height: 1; display: block; }
+.img-badge .lbl { font-size: .65rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; opacity: .8; line-height: 1.3; display: block; margin-top: 4px; }
+.img-badge.top-right { top: 28px; right: -18px; background: #fff; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,.1); }
+.img-badge.top-right i { color: var(--primary); font-size: 1.1rem; display: block; margin-bottom: 4px; }
+.img-badge.top-right span { font-size: .72rem; font-weight: 700; color: var(--dark); white-space: nowrap; display: block; }
+.check-list { list-style: none; padding: 0; margin: 0 0 28px; }
+.check-list li { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; color: var(--text); margin-bottom: 10px; line-height: 1.6; }
+.check-list li i { color: var(--primary); margin-top: 3px; flex-shrink: 0; }
+
+/* ── Stats Strip ── */
+.stats-strip { background: var(--bg-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.stat-item { padding: 36px 24px; text-align: center; position: relative; }
+.stat-item + .stat-item::before { content: ''; position: absolute; left: 0; top: 20%; bottom: 20%; width: 1px; background: var(--border); }
+.stat-num { font-size: 2.4rem; font-weight: 800; color: var(--primary); line-height: 1; display: block; letter-spacing: -0.02em; }
+.stat-lbl { font-size: .72rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); display: block; margin-top: 6px; }
+
+/* ── Machine Section ── */
+.machines-section { padding: 96px 0; background: var(--bg-light); }
+.machine-group-label {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 36px; padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+.machine-group-icon {
+    width: 44px; height: 44px; flex-shrink: 0;
+    background: var(--primary); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+}
+.machine-group-icon i { color: #fff; font-size: 1.1rem; }
+.machine-group-title { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin: 0; }
+
+.machine-card {
+    background: #fff; border: 1px solid var(--border); border-radius: 14px;
+    padding: 28px 24px; height: 100%;
+    transition: transform .3s, box-shadow .3s, border-color .3s;
+    position: relative; overflow: hidden;
+}
+.machine-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--primary); transform: scaleX(0); transition: transform .3s; }
+.machine-card:hover { transform: translateY(-5px); box-shadow: 0 20px 60px rgba(27,58,107,.1); border-color: transparent; }
+.machine-card:hover::after { transform: scaleX(1); }
+.machine-card.new-addition { border-color: var(--primary); }
+.machine-card.new-addition::before { content: 'New'; position: absolute; top: 14px; right: 14px; background: var(--primary); color: #fff; font-size: .62rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; }
+.mc-icon { width: 48px; height: 48px; background: #EEF4FF; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; transition: background .3s; }
+.machine-card:hover .mc-icon { background: var(--primary); }
+.mc-icon i { color: var(--primary); font-size: 1.25rem; transition: color .3s; }
+.machine-card:hover .mc-icon i { color: #fff; }
+.mc-title { font-size: .96rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.mc-desc { font-size: .83rem; color: var(--muted); line-height: 1.75; margin: 0; }
+
+/* ── Quality Inspection Section ── */
+.quality-section { padding: 96px 0; background: #fff; }
+.instr-card {
+    background: var(--bg-light); border: 1px solid var(--border); border-radius: 14px;
+    padding: 24px; height: 100%;
+    transition: transform .3s, box-shadow .3s, background .3s;
+}
+.instr-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(27,58,107,.09); background: #fff; }
+.instr-icon { width: 44px; height: 44px; background: #EEF4FF; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; transition: background .3s; }
+.instr-card:hover .instr-icon { background: var(--primary); }
+.instr-icon i { color: var(--primary); font-size: 1.1rem; transition: color .3s; }
+.instr-card:hover .instr-icon i { color: #fff; }
+.instr-title { font-size: .92rem; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+.instr-desc { font-size: .81rem; color: var(--muted); line-height: 1.7; margin: 0; }
+
+.iso-panel {
+    background: var(--bg-light); border: 1px solid var(--border); border-radius: 16px;
+    padding: 32px; height: 100%;
+}
+.iso-panel-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.iso-panel-header i { color: var(--primary); font-size: 1.4rem; }
+.iso-panel-title { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0; }
+.iso-embed { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.iso-embed iframe { display: block; border: none; }
+
+/* ── Achievements Section ── */
+.achievements-section { padding: 96px 0; background: var(--bg-light); }
+.ach-card {
+    background: #fff; border: 1px solid var(--border); border-radius: 16px;
+    overflow: hidden; height: 100%;
+    transition: transform .3s, box-shadow .3s;
+}
+.ach-card:hover { transform: translateY(-6px); box-shadow: 0 24px 64px rgba(27,58,107,.12); }
+.ach-img {
+    height: 220px; display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+}
+.ach-img-placeholder { text-align: center; }
+.ach-img-placeholder i { font-size: 3.5rem; display: block; margin-bottom: 10px; }
+.ach-img-placeholder .ph-label { font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+.ach-img-placeholder .ph-hint { font-size: .68rem; color: var(--muted); }
+.ach-body { padding: 28px 24px; }
+.ach-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 12px; border-radius: 100px;
+    font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.ach-title { font-size: 1.05rem; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+.ach-desc { font-size: .84rem; color: var(--muted); line-height: 1.75; margin: 0; }
+
+/* ── CTA Section ── */
+.cta-section { padding: 96px 0; background: linear-gradient(135deg, #0d1f3c 0%, #1B3A6B 100%); position: relative; overflow: hidden; }
+.cta-section::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+.cta-heading { font-size: clamp(1.8rem,3.5vw,3rem); font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 16px; }
+.cta-sub { color: rgba(255,255,255,.65); font-size: 1rem; line-height: 1.75; margin-bottom: 36px; }
+.cta-btn-white { background: #fff; color: var(--primary); font-weight: 700; font-size: .88rem; letter-spacing: .04em; padding: 14px 36px; border-radius: 4px; border: none; text-decoration: none; display: inline-block; transition: transform .2s, box-shadow .2s; }
+.cta-btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); color: var(--primary); }
+.cta-btn-outline { background: transparent; color: #fff; font-weight: 600; font-size: .88rem; padding: 14px 36px; border-radius: 4px; border: 1px solid rgba(255,255,255,.35); text-decoration: none; display: inline-block; transition: background .2s, transform .2s; }
+.cta-btn-outline:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); color: #fff; transform: translateY(-2px); }
+.cta-info-card { background: rgba(255,255,255,.07); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 32px; }
+.cta-info-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 20px; }
+.cta-info-row:last-child { margin-bottom: 0; }
+.cta-info-icon { width: 40px; height: 40px; flex-shrink: 0; background: rgba(255,255,255,.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.cta-info-icon i { color: var(--accent); font-size: 1rem; }
+.cta-info-label { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 3px; }
+.cta-info-value { font-size: .88rem; font-weight: 600; color: rgba(255,255,255,.85); line-height: 1.5; }
+.cta-info-value a { color: rgba(255,255,255,.85); text-decoration: none; }
+.cta-info-value a:hover { color: #fff; }
+
+/* ── Footer ── */
+.site-footer { background: #070f1e; padding: 72px 0 0; color: rgba(255,255,255,.6); font-size: .87rem; }
+.footer-brand-text { font-weight: 800; font-size: 1.4rem; color: #fff; letter-spacing: -0.02em; margin-bottom: 16px; display: block; }
+.footer-brand-text span { color: var(--accent); }
+.footer-heading { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 18px; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: rgba(255,255,255,.55); text-decoration: none; transition: color .2s, padding-left .2s; font-size: .88rem; }
+.footer-links a:hover { color: #fff; padding-left: 4px; }
+.footer-contact-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.footer-contact-row i { color: var(--accent); margin-top: 3px; flex-shrink: 0; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.06); margin-top: 56px; padding: 20px 0; font-size: .76rem; color: rgba(255,255,255,.25); text-align: center; }
+.footer-bottom a { color: rgba(255,255,255,.25); text-decoration: none; }
+
+/* ── Back to Top ── */
+.back-to-top { position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px; background: var(--primary); color: #fff; border: none; border-radius: 50%; display: none; align-items: center; justify-content: center; font-size: 1rem; box-shadow: 0 4px 16px rgba(27,58,107,.4); z-index: 999; transition: background .2s, transform .2s; text-decoration: none; }
+.back-to-top:hover { background: var(--primary-light); transform: translateY(-2px); color: #fff; }
+.back-to-top.show { display: flex; }
+
+@media (max-width: 991px) {
+    .img-badge.bottom-left, .img-badge.top-right { display: none; }
+    .overview-section, .machines-section, .quality-section, .achievements-section { padding: 64px 0; }
+}
+@media (max-width: 767px) {
+    .stat-item + .stat-item::before { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar-strip d-none d-lg-block">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <span class="text-white" style="opacity:.7;"><i class="bi bi-geo-alt-fill me-1" style="color:#93C5FD;"></i>MIDC Chinchwad, Pune 411019</span>
+                <span class="text-white" style="opacity:.7;"><i class="bi bi-clock-fill me-1" style="color:#93C5FD;"></i>Available 24 / 7</span>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <a href="tel:+919922589835" class="text-white" style="opacity:.7;"><i class="fa fa-phone-alt me-1" style="color:#93C5FD;"></i>+91 99225 89835</a>
+                <a href="mailto:pandurangauto98@gmail.com" class="text-white" style="opacity:.7;"><i class="fa fa-envelope me-1" style="color:#93C5FD;"></i>pandurangauto98@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="site-nav navbar navbar-expand-lg py-0 pe-lg-4" id="siteNav">
+    <div class="container-fluid ps-0">
+        <a href="index.html" class="navbar-brand me-0 ps-0">
+            <div class="navbar-brand-wrapper">
+                <span class="navbar-brand-text">PAI<span>.</span></span>
+            </div>
+        </a>
+        <button class="navbar-toggler me-3 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="facilities.html" class="nav-link active">Facilities</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <a href="contact.html" class="btn-quote ms-lg-4 me-lg-2 d-none d-lg-inline-block">Request a Quote</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container" style="position:relative;z-index:1;">
+        <span class="page-hero-eyebrow"><i class="bi bi-building-gear"></i> Our Facility</span>
+        <h1>State-of-the-Art<br>Manufacturing Setup</h1>
+        <p class="page-hero-sub">11 precision machines. 6 inspection instruments. ISO 9001:2015 certified processes — all under one roof in MIDC Chinchwad, Pune.</p>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Facilities</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Stats Strip -->
+<div class="stats-strip">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="stat-item">
+                    <span class="stat-num">11</span>
+                    <span class="stat-lbl">Machines</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                <div class="stat-item">
+                    <span class="stat-num">6</span>
+                    <span class="stat-lbl">Inspection Instruments</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+                <div class="stat-item">
+                    <span class="stat-num">ISO</span>
+                    <span class="stat-lbl">9001:2015 Certified</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                <div class="stat-item">
+                    <span class="stat-num">23<span style="font-size:1.3rem;">+</span></span>
+                    <span class="stat-lbl">Years of Experience</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Facility Overview -->
+<section class="overview-section">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <span class="sec-eyebrow">Our Setup</span>
+                <h2 class="sec-h2">Built for Precision,<br>Designed for Scale</h2>
+                <div class="sec-rule"></div>
+                <p style="color:var(--text);line-height:1.8;margin-bottom:16px;">We utilize highly precise and efficient automated machinery to meet customers' critical requirements at scale. Precision CNC turning is a key feature of our manufacturing capabilities, ensuring consistent quality and accuracy across all products.</p>
+                <p style="color:var(--text);line-height:1.8;margin-bottom:28px;">Located at MIDC Chinchwad, Pune, our facility is equipped with modern CNC and VMC machines, surface grinding equipment, wire cut machines, and a comprehensive suite of quality inspection instruments — all operating under our ISO 9001:2015 certified quality management system.</p>
+                <ul class="check-list mb-36">
+                    <li><i class="bi bi-check-circle-fill"></i>Advanced CNC &amp; VMC Machining Centers</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Surface Grinding &amp; Wire Cut Capabilities</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Precision Traub &amp; Drill Machines</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Full In-House Quality Inspection Lab</li>
+                    <li><i class="bi bi-check-circle-fill"></i>ISO 9001:2015 Certified Processes</li>
+                </ul>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="contact.html" class="btn-pai">Request a Quote</a>
+                    <a href="#machines" class="btn-pai-outline">View Our Machines</a>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                <div class="img-wrap">
+                    <!-- PHOTO NOTE: Replace with actual CNC/VMC machine or facility floor photo -->
+                    <img src="img/about-1.jpg" alt="Pandurang Auto Industries CNC VMC Facility" loading="lazy">
+                    <div class="img-badge bottom-left">
+                        <span class="num">11</span>
+                        <span class="lbl">Precision<br>Machines</span>
+                    </div>
+                    <div class="img-badge top-right">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <span>ISO 9001:2015<br>Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Machine Setup Section -->
+<section class="machines-section" id="machines">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center" data-aos="fade-up">
+                <span class="sec-eyebrow">Equipment</span>
+                <h2 class="sec-h2">Our Machines</h2>
+                <div class="sec-rule mx-auto"></div>
+                <p style="color:var(--muted);font-size:.95rem;line-height:1.75;">A comprehensive range of precision machining and manufacturing equipment to handle diverse production requirements.</p>
+            </div>
+        </div>
+
+        <!-- Group A: CNC / VMC & Precision Machines -->
+        <div class="machine-group-label" data-aos="fade-up">
+            <div class="machine-group-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h3 class="machine-group-title">CNC / VMC &amp; Precision Machines</h3>
+        </div>
+        <div class="row g-4 mb-5">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                    <div class="mc-title">CNC Machine</div>
+                    <p class="mc-desc">Computer Numerical Control turning centre for high-precision external and internal turning, facing, and threading of cylindrical components with tight tolerances.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="60">
+                <div class="machine-card new-addition h-100">
+                    <div class="mc-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                    <div class="mc-title">CNC Machine J 300 LM</div>
+                    <p class="mc-desc">Latest-generation CNC turning centre with enhanced axis travel and live tooling capability, enabling complex multi-operation parts in a single setup for improved cycle times.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="120">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+                    <div class="mc-title">VMC Machine</div>
+                    <p class="mc-desc">Vertical Machining Centre for high-accuracy milling, drilling, tapping, and contouring of prismatic components, delivering repeatable precision for complex part geometries.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="machine-card new-addition h-100">
+                    <div class="mc-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+                    <div class="mc-title">VMC Machine 850V / 1000</div>
+                    <p class="mc-desc">Heavy-duty VMC with 850–1000mm table travel for larger workpieces, providing high-speed spindle performance and rigid structure for demanding milling and boring operations.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="60">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-slash-circle"></i></div>
+                    <div class="mc-title">Surface Grinding Machine</div>
+                    <p class="mc-desc">Precision surface grinder for achieving fine flat surface finishes and tight dimensional tolerances on workpiece faces, ensuring parallelism and flatness to micron levels.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="120">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-circle-half"></i></div>
+                    <div class="mc-title">Grinding Machine</div>
+                    <p class="mc-desc">General-purpose grinding machine for cylindrical, internal, and profile grinding operations, used to achieve precise dimensional accuracy and superior surface quality.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-lightning-fill"></i></div>
+                    <div class="mc-title">Wire Cut Machine</div>
+                    <p class="mc-desc">Electrical discharge wire cutting (WEDM) machine for intricate profile cutting of hardened metals and tool steels, delivering burr-free edges with high dimensional accuracy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group B: Supporting Machines -->
+        <div class="machine-group-label" data-aos="fade-up">
+            <div class="machine-group-icon"><i class="bi bi-tools"></i></div>
+            <h3 class="machine-group-title">Supporting Machines</h3>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-arrows-angle-contract"></i></div>
+                    <div class="mc-title">Traub Machine</div>
+                    <p class="mc-desc">Automatic single-spindle turning machine for high-volume precision turned parts, ideal for producing small-diameter components with complex profiles efficiently.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="60">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-arrows-angle-expand"></i></div>
+                    <div class="mc-title">Sliding Traub Machine</div>
+                    <p class="mc-desc">Sliding-head Traub lathe for Swiss-type precision turning of slender and small components, offering superior concentricity and surface finish for high-volume production runs.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="120">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-arrow-down-circle"></i></div>
+                    <div class="mc-title">Drill Machine</div>
+                    <p class="mc-desc">Heavy-duty pillar drill press for accurate hole making, reaming, and tapping operations across a variety of metals, supporting secondary drilling on machined components.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="180">
+                <div class="machine-card h-100">
+                    <div class="mc-icon"><i class="bi bi-arrow-repeat"></i></div>
+                    <div class="mc-title">Vibro / Tumbling Machine</div>
+                    <p class="mc-desc">Vibratory finishing / tumbling machine for deburring, edge-breaking, and surface smoothing of batch components, ensuring consistent post-machining finish quality at scale.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quality Inspection Section -->
+<section class="quality-section" id="quality">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center" data-aos="fade-up">
+                <span class="sec-eyebrow">Quality Control</span>
+                <h2 class="sec-h2">Quality Inspection</h2>
+                <div class="sec-rule mx-auto"></div>
+                <p style="color:var(--muted);font-size:.95rem;line-height:1.75;">We maintain rigorous quality control with advanced inspection instruments ensuring every component meets precise specifications.</p>
+            </div>
+        </div>
+        <div class="row g-5 align-items-start">
+            <!-- Instrument Cards -->
+            <div class="col-lg-7">
+                <div class="row g-3">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                        <div class="instr-card h-100">
+                            <div class="instr-icon"><i class="bi bi-search"></i></div>
+                            <div class="instr-title">Profile Projector</div>
+                            <p class="instr-desc">Optical comparator for magnified 2D profile measurement of component contours, thread forms, and complex geometries against master overlays.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="60">
+                        <div class="instr-card h-100">
+                            <div class="instr-icon"><i class="bi bi-rulers"></i></div>
+                            <div class="instr-title">Digital Height Gauge</div>
+                            <p class="instr-desc">High-accuracy digital height gauge for measuring and scribing precise heights, step dimensions, and perpendicularity of machined features on a surface plate.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="120">
+                        <div class="instr-card h-100">
+                            <div class="instr-icon"><i class="bi bi-shield-check"></i></div>
+                            <div class="instr-title">Hardness Tester</div>
+                            <p class="instr-desc">Rockwell / Brinell hardness testing instrument for verifying material hardness values on heat-treated and raw components, ensuring correct material properties.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="180">
+                        <div class="instr-card h-100">
+                            <div class="instr-icon"><i class="bi bi-bar-chart-line"></i></div>
+                            <div class="instr-title">Roughness Tester</div>
+                            <p class="instr-desc">Surface roughness profilometer (Ra/Rz) for quantifying surface texture and finish quality of machined surfaces, confirming compliance with customer surface finish specs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="240">
+                        <div class="instr-card h-100">
+                            <div class="instr-icon"><i class="bi bi-grid-3x2-gap-fill"></i></div>
+                            <div class="instr-title">Instrument &amp; Gauge Shelf</div>
+                            <p class="instr-desc">Organised calibrated gauge storage system including micrometers, vernier calipers, bore gauges, plug gauges, and ring gauges for in-process dimensional checks.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="instr-card h-100">
+                            <div class="instr-icon"><i class="bi bi-crosshair"></i></div>
+                            <div class="instr-title">Trimos V4-700</div>
+                            <p class="instr-desc">Trimos V4-700 precision vertical measuring instrument for high-accuracy height, step, and comparative dimensional measurements with digital readout, traceable to national standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ISO Certificate Panel -->
+            <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+                <div class="iso-panel">
+                    <div class="iso-panel-header">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <div class="iso-panel-title">Our ISO 9001:2015 Certificate</div>
+                    </div>
+                    <div class="iso-embed mb-3">
+                        <iframe src="iso-certificate.pdf" width="100%" height="460" title="PAI ISO 9001:2015 Certificate">
+                            <p>Your browser does not support PDFs. <a href="iso-certificate.pdf" target="_blank">Download the certificate</a>.</p>
+                        </iframe>
+                    </div>
+                    <a href="iso-certificate.pdf" target="_blank" class="btn-pai-outline w-100 text-center">
+                        <i class="bi bi-download me-2"></i>Download Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section class="achievements-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center" data-aos="fade-up">
+                <span class="sec-eyebrow">Milestones</span>
+                <h2 class="sec-h2">Our Best Achievements</h2>
+                <div class="sec-rule mx-auto"></div>
+                <p style="color:var(--muted);font-size:.95rem;line-height:1.75;">Delivering engineering excellence and earning recognition from our customers for quality, innovation, and partnership.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <!-- RSB Transmission Trophy -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="ach-card h-100">
+                    <!-- PHOTO: Replace with actual RSB Transmission trophy photo -->
+                    <div class="ach-img" style="background:linear-gradient(135deg,#EFF6FF,#DBEAFE);">
+                        <div class="ach-img-placeholder">
+                            <i class="bi bi-trophy-fill" style="color:#1d4ed8;"></i>
+                            <div class="ph-label" style="color:#1d4ed8;">Photo Placeholder</div>
+                            <div class="ph-hint">Replace with RSB trophy photo</div>
+                        </div>
+                    </div>
+                    <div class="ach-body">
+                        <span class="ach-tag" style="background:#EFF6FF;color:#1d4ed8;">
+                            <i class="bi bi-trophy-fill" style="font-size:.7rem;"></i> Award
+                        </span>
+                        <div class="ach-title">RSB Transmission Trophy</div>
+                        <p class="ach-desc">Recognized by RSB Transmission for outstanding performance as a precision component supplier — a testament to our consistent quality and on-time delivery.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- RSB Transmission Certificate -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="ach-card h-100">
+                    <!-- PHOTO: Replace with actual RSB Transmission certificate photo -->
+                    <div class="ach-img" style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);">
+                        <div class="ach-img-placeholder">
+                            <i class="bi bi-patch-check-fill" style="color:#16a34a;"></i>
+                            <div class="ph-label" style="color:#16a34a;">Photo Placeholder</div>
+                            <div class="ph-hint">Replace with RSB certificate photo</div>
+                        </div>
+                    </div>
+                    <div class="ach-body">
+                        <span class="ach-tag" style="background:#F0FDF4;color:#16a34a;">
+                            <i class="bi bi-patch-check-fill" style="font-size:.7rem;"></i> Certificate
+                        </span>
+                        <div class="ach-title">RSB Transmission Certificate</div>
+                        <p class="ach-desc">Awarded a formal certificate of excellence by RSB Transmission — certifying PAI as an approved and preferred supplier of precision machined components.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Hydraulic Fixture Development -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="ach-card h-100">
+                    <!-- PHOTO: Replace with actual hydraulic fixture photo -->
+                    <div class="ach-img" style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);">
+                        <div class="ach-img-placeholder">
+                            <i class="bi bi-wrench-adjustable-circle-fill" style="color:#d97706;"></i>
+                            <div class="ph-label" style="color:#d97706;">Photo Placeholder</div>
+                            <div class="ph-hint">Replace with hydraulic fixture photo</div>
+                        </div>
+                    </div>
+                    <div class="ach-body">
+                        <span class="ach-tag" style="background:#FEF3C7;color:#d97706;">
+                            <i class="bi bi-gear-fill" style="font-size:.7rem;"></i> Engineering
+                        </span>
+                        <div class="ach-title">Hydraulic Fixture Development</div>
+                        <p class="ach-desc">Designed and developed a custom hydraulic fixture for a well-known customer's production line — demonstrating our capability in precision tooling and custom engineering solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Photo note for client -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-9">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3" style="background:#FFF7ED;border:1px solid #FDE68A;">
+                    <i class="bi bi-camera-fill" style="color:#d97706;font-size:1.1rem;flex-shrink:0;"></i>
+                    <p style="font-size:.83rem;color:#92400e;margin:0;"><strong>📸 Photos needed:</strong> Please share the actual RSB Transmission trophy photo, RSB certificate photo, and hydraulic fixture photo to replace the placeholders above.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container" style="position:relative;z-index:1;">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h2 class="cta-heading">Ready to Start<br>Your Next Project?</h2>
+                <p class="cta-sub">Tell us your machining requirements and get a competitive quote. We serve industries across Pune, Maharashtra and beyond.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="contact.html" class="cta-btn-white">Get In Touch</a>
+                    <a href="tel:+919922589835" class="cta-btn-outline"><i class="fa fa-phone-alt me-2"></i>Call Us Now</a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-delay="100">
+                <div class="cta-info-card">
+                    <div class="cta-info-row">
+                        <div class="cta-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <div class="cta-info-label">Address</div>
+                            <div class="cta-info-value">Plot No: 3B+3, Plot No:22, "D1" Block,<br>Akurdi Industrial Estate, MIDC Chinchwad,<br>Pune 411019</div>
+                        </div>
+                    </div>
+                    <div class="cta-info-row">
+                        <div class="cta-info-icon"><i class="bi bi-telephone-fill"></i></div>
+                        <div>
+                            <div class="cta-info-label">Phone</div>
+                            <div class="cta-info-value">
+                                <a href="tel:+919922589835">+91 99225 89835</a> — Mr. S.S. Kolte<br>
+                                <a href="tel:+919325776868">+91 93257 76868</a> — Pranita Kolte
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-info-row">
+                        <div class="cta-info-icon"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <div class="cta-info-label">Email</div>
+                            <div class="cta-info-value"><a href="mailto:pandurangauto98@gmail.com">pandurangauto98@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <div class="cta-info-row">
+                        <div class="cta-info-icon"><i class="bi bi-clock-fill"></i></div>
+                        <div>
+                            <div class="cta-info-label">Availability</div>
+                            <div class="cta-info-value">24 Hours / 7 Days</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <span class="footer-brand-text">PAI<span>.</span></span>
+                <p style="line-height:1.8;max-width:300px;">ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components — serving multiple industries from MIDC Chinchwad, Pune.</p>
+                <div class="mt-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
+                    <i class="bi bi-patch-check-fill" style="color:#93C5FD;font-size:1.1rem;"></i>
+                    <span style="font-size:.82rem;font-weight:600;color:#fff;">ISO 9001:2015 Certified</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+                <div class="footer-heading">Quick Links</div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="footer-heading">Services</div>
+                <ul class="footer-links">
+                    <li><a href="services.html">Automobile Industries</a></li>
+                    <li><a href="services.html">Hydraulic Applications</a></li>
+                    <li><a href="services.html">Pump &amp; Valve Industries</a></li>
+                    <li><a href="services.html">Electronic Industries</a></li>
+                    <li><a href="services.html">Oil &amp; Gas Industry</a></li>
+                    <li><a href="services.html">Energy &amp; Power Sector</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-heading">Contact Us</div>
+                <div class="footer-contact-row">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Plot No: 3B+3, "D1" Block, Akurdi Industrial Estate, MIDC Chinchwad, Pune 411019</span>
+                </div>
+                <div class="footer-contact-row">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                        <a href="tel:+919922589835" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 99225 89835</a>
+                        <a href="tel:+919325776868" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 93257 76868</a>
+                    </div>
+                </div>
+                <div class="footer-contact-row">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:pandurangauto98@gmail.com" style="color:rgba(255,255,255,.55);text-decoration:none;">pandurangauto98@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            &copy; 2025 Pandurang Auto Industries. All Rights Reserved. &nbsp;&middot;&nbsp;
+            <a href="https://www.pandurangautoindustries.in">pandurangautoindustries.in</a> &nbsp;&middot;&nbsp; MIDC Chinchwad, Pune, Maharashtra
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 700, once: true, offset: 60 });
+const nav = document.getElementById('siteNav');
+if (nav) {
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+}
+const btt = document.getElementById('backToTop');
+if (btt) {
+    window.addEventListener('scroll', () => {
+        btt.classList.toggle('show', window.scrollY > 300);
+    });
+    btt.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+</script>
+</body>
+</html>
