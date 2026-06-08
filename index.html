@@ -830,30 +830,32 @@
 .customers-section { padding: 100px 0; background: #fff; }
 .section-subtitle { font-size: 1.05rem; color: #6B7280; margin-top: 12px; }
 .customer-logo-card {
-    padding: 24px;
+    padding: 16px;
     border-radius: 12px;
     border: 1px solid #E8EDF5;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 140px;
+    height: 100px;
+    aspect-ratio: 1;
     transition: transform .3s, box-shadow .3s, border-color .3s;
 }
 .customer-logo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 50px rgba(27,58,107,.12);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(27,58,107,.1);
     border-color: #1B3A6B;
 }
 .customer-logo-card img {
-    max-width: 100%;
+    max-width: 85%;
+    max-height: 85%;
+    width: auto;
     height: auto;
-    max-height: 100%;
     object-fit: contain;
     transition: transform .3s;
 }
 .customer-logo-card:hover img {
-    transform: scale(1.08);
+    transform: scale(1.12);
 }
 
 /* ---------- CTA ---------- */
