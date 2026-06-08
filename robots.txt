@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /lib/
+
+Sitemap: https://www.pandurangai.com/sitemap.xml
