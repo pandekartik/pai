@@ -82,17 +82,67 @@ body { color: var(--text); background: #fff; }
 .topbar-strip a:hover { color: #fff; }
 
 /* ── Shared: Nav ── */
-.site-nav { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 1px 0 var(--border); transition: box-shadow .3s; }
-.site-nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
-.site-nav .navbar-brand-wrapper { background: var(--primary); padding: 14px 28px 14px 24px; clip-path: polygon(0 0,calc(100% - 14px) 0,100% 100%,0 100%); margin-right: 16px; }
-.site-nav .navbar-brand-text { font-weight: 800; font-size: 1.35rem; color: #fff; letter-spacing: -0.02em; line-height: 1; }
-.site-nav .navbar-brand-text span { color: var(--accent); }
-.site-nav .nav-link { font-size: .88rem; font-weight: 500; color: var(--dark) !important; padding: 24px 15px !important; position: relative; transition: color .2s; }
-.site-nav .nav-link::after { content: ''; position: absolute; bottom: 14px; left: 15px; right: 15px; height: 2px; background: var(--primary); transform: scaleX(0); transition: transform .25s; border-radius: 2px; }
-.site-nav .nav-link:hover::after, .site-nav .nav-link.active::after { transform: scaleX(1); }
-.site-nav .nav-link:hover { color: var(--primary) !important; }
-.site-nav .btn-quote { background: var(--primary); color: #fff; font-size: .83rem; font-weight: 700; padding: 10px 24px; border-radius: 4px; text-decoration: none; display: inline-block; transition: background .2s, transform .2s; white-space: nowrap; border: none; }
-.site-nav .btn-quote:hover { background: var(--primary-light); transform: translateY(-1px); color: #fff; }
+.site-nav {
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    transition: box-shadow .35s;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 1px 0 #E8EDF5;
+}
+.site-nav.scrolled {
+    box-shadow: 0 2px 20px rgba(0,0,0,.08);
+}
+.site-nav .navbar-brand-wrapper {
+    background: transparent;
+    padding: 8px 0;
+    clip-path: none;
+    margin-right: 16px;
+    transition: background .3s;
+}
+.site-nav .navbar-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+.site-nav .nav-link {
+    font-family: 'Geist', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #1a2332 !important;
+    padding: 24px 15px !important;
+    transition: color .2s;
+    position: relative;
+}
+.site-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 14px; left: 15px; right: 15px;
+    height: 2px;
+    background: #1B3A6B;
+    transform: scaleX(0);
+    transition: transform .25s;
+    border-radius: 2px;
+}
+.site-nav .nav-link:hover::after,
+.site-nav .nav-link.active::after { transform: scaleX(1); }
+.site-nav .nav-link:hover { color: #1B3A6B !important; }
+.site-nav .btn-quote {
+    font-family: 'Geist', sans-serif;
+    font-size: 0.83rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    background: #1B3A6B;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    transition: background .2s, transform .2s;
+    white-space: nowrap;
+}
+.site-nav .btn-quote:hover { background: #2A5298; transform: translateY(-1px); color:#fff; }
 
 /* Responsive Navbar */
 @media (max-width: 991px) {
@@ -157,10 +207,6 @@ body { color: var(--text); background: #fff; }
 .page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: #EEF4FF; border: 1px solid #C7D9F7; color: var(--primary); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 16px; }
 .page-hero h1 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; color: var(--dark); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px; }
 .page-hero-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 560px; }
-.breadcrumb { background: none; padding: 0; margin: 16px 0 0; }
-.breadcrumb-item a { color: var(--primary); text-decoration: none; font-size: .82rem; }
-.breadcrumb-item.active { color: var(--muted); font-size: .82rem; }
-.breadcrumb-item + .breadcrumb-item::before { color: #CBD5E1; }
 
 /* ── Section Labels ── */
 .sec-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 10px; }
@@ -269,12 +315,6 @@ textarea.form-control { resize: vertical; min-height: 120px; }
         <span class="page-hero-eyebrow"><i class="bi bi-chat-dots-fill"></i> Get In Touch</span>
         <h1>Let's Discuss<br>Your Requirements</h1>
         <p class="page-hero-sub">Send us your drawings or specifications and we'll get back to you with a competitive quote within 24 hours.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-            </ol>
-        </nav>
     </div>
 </section>
 
