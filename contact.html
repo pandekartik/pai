@@ -194,18 +194,21 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 .form-success { display: none; background: #F0FDF4; border: 1px solid #86EFAC; border-radius: 10px; padding: 20px 24px; color: #15803d; font-size: .9rem; font-weight: 600; }
 
 /* ── Footer ── */
-.site-footer { background: #070f1e; padding: 72px 0 0; color: rgba(255,255,255,.6); font-size: .87rem; }
-.footer-brand-text { font-weight: 800; font-size: 1.4rem; color: #fff; letter-spacing: -0.02em; margin-bottom: 16px; display: block; }
-.footer-brand-text span { color: var(--accent); }
-.footer-heading { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 18px; }
+.site-footer { background: #fff; padding: 72px 0 0; color: #6B7280; font-size: .87rem; border-top: 1px solid #E8EDF5; }
+.footer-brand-text { font-weight: 800; font-size: 1.4rem; color: #0d1f3c; letter-spacing: -0.02em; margin-bottom: 16px; display: block; }
+.footer-brand-text span { color: #1B3A6B; }
+.footer-heading { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #374151; margin-bottom: 18px; }
 .footer-links { list-style: none; padding: 0; margin: 0; }
 .footer-links li { margin-bottom: 10px; }
-.footer-links a { color: rgba(255,255,255,.55); text-decoration: none; transition: color .2s, padding-left .2s; font-size: .88rem; }
-.footer-links a:hover { color: #fff; padding-left: 4px; }
+.footer-links a { color: #6B7280; text-decoration: none; transition: color .2s, padding-left .2s; font-size: .88rem; }
+.footer-links a:hover { color: #1B3A6B; padding-left: 4px; }
 .footer-contact-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
-.footer-contact-row i { color: var(--accent); margin-top: 3px; flex-shrink: 0; }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,.06); margin-top: 56px; padding: 20px 0; font-size: .76rem; color: rgba(255,255,255,.25); text-align: center; }
-.footer-bottom a { color: rgba(255,255,255,.25); text-decoration: none; }
+.footer-contact-row i { color: #1B3A6B; margin-top: 3px; flex-shrink: 0; }
+.footer-contact-row a { color: #6B7280; text-decoration: none; transition: color .2s; }
+.footer-contact-row a:hover { color: #1B3A6B; }
+.footer-bottom { border-top: 1px solid #E8EDF5; margin-top: 56px; padding: 20px 0; font-size: .76rem; color: #9CA3AF; text-align: center; }
+.footer-bottom a { color: #9CA3AF; text-decoration: none; transition: color .2s; }
+.footer-bottom a:hover { color: #1B3A6B; }
 
 /* ── Back to Top ── */
 .back-to-top { position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px; background: var(--primary); color: #fff; border: none; border-radius: 50%; display: none; align-items: center; justify-content: center; font-size: 1rem; box-shadow: 0 4px 16px rgba(27,58,107,.4); z-index: 999; transition: background .2s, transform .2s; text-decoration: none; }
@@ -237,8 +240,8 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 </div>
 
 <!-- Navbar -->
-<nav class="site-nav navbar navbar-expand-lg py-0 pe-lg-4" id="siteNav">
-    <div class="container-fluid ps-0">
+<nav class="site-nav navbar navbar-expand-lg py-0 ps-lg-4 pe-lg-4" id="siteNav">
+    <div class="container-fluid ps-lg-0">
         <a href="index.html" class="navbar-brand me-0 d-flex align-items-center">
             <div class="navbar-brand-wrapper d-flex align-items-center gap-3">
                 <img src="img/Logo.png" alt="Pandurang Auto Industries" class="navbar-logo" style="height: 40px; width: auto;">
@@ -420,11 +423,11 @@ textarea.form-control { resize: vertical; min-height: 120px; }
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-4">
-                <span class="footer-brand-text">PAI<span>.</span></span>
-                <p style="line-height:1.8;max-width:300px;">ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components — serving multiple industries from MIDC Chinchwad, Pune.</p>
-                <div class="mt-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
-                    <i class="bi bi-patch-check-fill" style="color:#93C5FD;font-size:1.1rem;"></i>
-                    <span style="font-size:.82rem;font-weight:600;color:#fff;">ISO 9001:2015 Certified</span>
+                <img src="img/Logo.png" alt="Pandurang Auto Industries" style="height:50px;width:auto;margin-bottom:16px;display:block;">
+                <p style="line-height:1.8;max-width:300px;color:#6B7280;">ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components — serving multiple industries from MIDC Chinchwad, Pune.</p>
+                <div class="mt-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded" style="background:#EEF4FF;border:1px solid #C7D9F7;">
+                    <i class="bi bi-patch-check-fill" style="color:#1B3A6B;font-size:1.1rem;"></i>
+                    <span style="font-size:.82rem;font-weight:600;color:#0d1f3c;">ISO 9001:2015 Certified</span>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-2">
@@ -452,17 +455,17 @@ textarea.form-control { resize: vertical; min-height: 120px; }
                 <div class="footer-heading">Contact Us</div>
                 <div class="footer-contact-row">
                     <i class="bi bi-geo-alt-fill"></i>
-                    <span>Plot No: 3B+3, "D1" Block, Akurdi Industrial Estate, MIDC Chinchwad, Pune 411019</span>
+                    <span style="color:#6B7280;">Plot No: 3B+3, "D1" Block, Akurdi Industrial Estate, MIDC Chinchwad, Pune 411019</span>
                 </div>
                 <div class="footer-contact-row">
                     <i class="bi bi-telephone-fill"></i>
                     <div>
-                        <a href="tel:+919325776868" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 93257 76868</a>
+                        <a href="tel:+919325776868">+91 93257 76868</a>
                     </div>
                 </div>
                 <div class="footer-contact-row">
                     <i class="bi bi-envelope-fill"></i>
-                    <a href="mailto:info@pandurangai.com" style="color:rgba(255,255,255,.55);text-decoration:none;">info@pandurangai.com</a>
+                    <a href="mailto:info@pandurangai.com">info@pandurangai.com</a>
                 </div>
             </div>
         </div>
