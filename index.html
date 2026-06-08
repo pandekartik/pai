@@ -120,6 +120,22 @@
 .topbar-strip a { color: rgba(255,255,255,.7); text-decoration:none; transition:.2s; }
 .topbar-strip a:hover { color:#fff; }
 
+/* Responsive Topbar */
+@media (max-width: 991px) {
+    .topbar-strip {
+        font-size: 0.7rem;
+        padding: 6px 0;
+    }
+    .topbar-strip .gap-4 { gap: 12px !important; }
+}
+@media (max-width: 767px) {
+    .topbar-strip .d-flex > div:first-child span:last-child,
+    .topbar-strip .d-flex > div:last-child a:last-child {
+        display: none;
+    }
+    .topbar-strip .gap-4 { gap: 8px !important; }
+}
+
 /* ---------- NAVBAR ---------- */
 .site-nav {
     position: sticky;
@@ -695,7 +711,7 @@
 
 /* ---------- GALLERY SWIPER ---------- */
 .gallery-section { padding: 100px 0; background: #fff; overflow: hidden; }
-.gallery-swiper { overflow: visible !important; }
+.gallery-swiper { overflow: hidden !important; }
 .gallery-swiper .swiper-wrapper { align-items: center; }
 .gallery-slide {
     border-radius: 12px;
@@ -809,6 +825,36 @@
 .wu-card:hover .wu-icon { background: #1B3A6B; }
 .wu-icon i { color: #1B3A6B; font-size: 1.2rem; transition: color .3s; }
 .wu-card:hover .wu-icon i { color: #fff; }
+
+/* ---------- CUSTOMERS ---------- */
+.customers-section { padding: 100px 0; background: #fff; }
+.section-subtitle { font-size: 1.05rem; color: #6B7280; margin-top: 12px; }
+.customer-logo-card {
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #E8EDF5;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+.customer-logo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 50px rgba(27,58,107,.12);
+    border-color: #1B3A6B;
+}
+.customer-logo-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform .3s;
+}
+.customer-logo-card:hover img {
+    transform: scale(1.08);
+}
 
 /* ---------- CTA ---------- */
 .cta-section {
@@ -1136,8 +1182,8 @@
                 <span class="s-label">9001:2015 Certified</span>
             </div>
             <div class="col-6 col-md-3 stat-col" data-aos="fade-up" data-aos-delay="240">
-                <span class="s-num">11+</span>
-                <span class="s-label">Precision Machines</span>
+                <span class="s-num">3 Lac</span>
+                <span class="s-label">No. of Parts</span>
             </div>
         </div>
     </div>
@@ -1433,6 +1479,71 @@
     </div>
 </section>
 
+<!-- ═══ CUSTOMERS ═══ -->
+<section class="customers-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <span class="section-eyebrow">Our Customers</span>
+                <h2 class="section-h2">We owe our success to our customers</h2>
+                <p class="section-subtitle">High Quality, Cutting Edge Products delivered consistently over a period of a decade.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-1.png" alt="Customer Logo 1">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-2.png" alt="Customer Logo 2">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-3.png" alt="Customer Logo 3">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-4.png" alt="Customer Logo 4">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-5.png" alt="Customer Logo 5">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-6.png" alt="Customer Logo 6">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-7.png" alt="Customer Logo 7">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-8.png" alt="Customer Logo 8">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-9.png" alt="Customer Logo 9">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-10.png" alt="Customer Logo 10">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ═══ CTA ═══ -->
 <section class="cta-section">
     <div class="container" style="position:relative;z-index:1;">
@@ -1459,8 +1570,7 @@
                         <div>
                             <div class="cta-info-label">Phone</div>
                             <div class="cta-info-value">
-                                <a href="tel:+919325776868">+91 93257 76868</a> — Mr. S.S. Kolte<br>
-                                <a href="tel:+919325776868">+91 93257 76868</a> — Pranita Kolte
+                                <a href="tel:+919325776868">+91 93257 76868</a>
                             </div>
                         </div>
                     </div>
@@ -1489,7 +1599,7 @@
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-4">
-                <span class="footer-brand-text">PAI<span>.</span></span>
+                <img src="img/Logo.png" alt="Pandurang Auto Industries" style="height:50px;width:auto;margin-bottom:16px;display:block;">
                 <p style="line-height:1.8;max-width:300px;">ISO 9001:2015 certified manufacturer of precision CNC and VMC machined components — serving multiple industries from MIDC Chinchwad, Pune.</p>
                 <div class="mt-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
                     <i class="bi bi-patch-check-fill" style="color:#93C5FD;font-size:1.1rem;"></i>

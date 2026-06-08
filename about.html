@@ -320,6 +320,36 @@ body { color: var(--text); background: #fff; }
 .back-to-top:hover { background: var(--primary-light); transform: translateY(-2px); color: #fff; }
 .back-to-top.show { display: flex; }
 
+/* ── Customers Section ── */
+.customers-section { padding: 100px 0; background: #fff; }
+.section-subtitle { font-size: 1.05rem; color: #6B7280; margin-top: 12px; }
+.customer-logo-card {
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #E8EDF5;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+.customer-logo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 50px rgba(27,58,107,.12);
+    border-color: #1B3A6B;
+}
+.customer-logo-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform .3s;
+}
+.customer-logo-card:hover img {
+    transform: scale(1.08);
+}
+
 @media (max-width: 991px) {
     .img-badge.exp, .img-badge.iso { display: none; }
     .overview-section, .vm-section, .materials-section, .sectors-section, .whyus-section { padding: 64px 0; }
@@ -434,8 +464,8 @@ body { color: var(--text); background: #fff; }
                 <span class="stat-lbl">Industry Sectors</span>
             </div>
             <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="160">
-                <span class="stat-num">11</span>
-                <span class="stat-lbl">Machines</span>
+                <span class="stat-num">3 Lac</span>
+                <span class="stat-lbl">No. of Parts</span>
             </div>
             <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="240">
                 <span class="stat-num">ISO</span>
@@ -607,6 +637,71 @@ body { color: var(--text); background: #fff; }
     </div>
 </section>
 
+<!-- ═══ CUSTOMERS ═══ -->
+<section class="customers-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <span class="section-eyebrow">Our Customers</span>
+                <h2 class="section-h2">We owe our success to our customers</h2>
+                <p class="section-subtitle">High Quality, Cutting Edge Products delivered consistently over a period of a decade.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-1.png" alt="Customer Logo 1">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-2.png" alt="Customer Logo 2">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-3.png" alt="Customer Logo 3">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-4.png" alt="Customer Logo 4">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-5.png" alt="Customer Logo 5">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-6.png" alt="Customer Logo 6">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-7.png" alt="Customer Logo 7">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-8.png" alt="Customer Logo 8">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-9.png" alt="Customer Logo 9">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="customer-logo-card">
+                    <img src="img/client-logo-10.png" alt="Customer Logo 10">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-section">
     <div class="container" style="position:relative;z-index:1;">
@@ -622,7 +717,7 @@ body { color: var(--text); background: #fff; }
             <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-delay="100">
                 <div class="cta-info-card">
                     <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-geo-alt-fill"></i></div><div><div class="cta-info-label">Address</div><div class="cta-info-value">Plot No: 3B+3, Plot No:22, "D1" Block,<br>Akurdi Industrial Estate, MIDC Chinchwad,<br>Pune 411019</div></div></div>
-                    <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-telephone-fill"></i></div><div><div class="cta-info-label">Phone</div><div class="cta-info-value"><a href="tel:+919325776868">+91 93257 76868</a> — Mr. S.S. Kolte<br><a href="tel:+919325776868">+91 93257 76868</a> — Pranita Kolte</div></div></div>
+                    <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-telephone-fill"></i></div><div><div class="cta-info-label">Phone</div><div class="cta-info-value"><a href="tel:+919325776868">+91 93257 76868</a></div></div></div>
                     <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-envelope-fill"></i></div><div><div class="cta-info-label">Email</div><div class="cta-info-value"><a href="mailto:info@pandurangai.com">info@pandurangai.com</a></div></div></div>
                     <div class="cta-info-row"><div class="cta-info-icon"><i class="bi bi-clock-fill"></i></div><div><div class="cta-info-label">Availability</div><div class="cta-info-value">24 Hours / 7 Days</div></div></div>
                 </div>
@@ -665,7 +760,7 @@ body { color: var(--text); background: #fff; }
             <div class="col-lg-3">
                 <div class="footer-heading">Contact Us</div>
                 <div class="footer-contact-row"><i class="bi bi-geo-alt-fill"></i><span>Plot No: 3B+3, "D1" Block, Akurdi Industrial Estate, MIDC Chinchwad, Pune 411019</span></div>
-                <div class="footer-contact-row"><i class="bi bi-telephone-fill"></i><div><a href="tel:+919325776868" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 93257 76868</a><a href="tel:+919325776868" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 93257 76868</a></div></div>
+                <div class="footer-contact-row"><i class="bi bi-telephone-fill"></i><div><a href="tel:+919325776868" style="color:rgba(255,255,255,.55);text-decoration:none;display:block;">+91 93257 76868</a></div></div>
                 <div class="footer-contact-row"><i class="bi bi-envelope-fill"></i><a href="mailto:info@pandurangai.com" style="color:rgba(255,255,255,.55);text-decoration:none;">info@pandurangai.com</a></div>
             </div>
         </div>
