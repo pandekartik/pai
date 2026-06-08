@@ -133,19 +133,28 @@
     box-shadow: 0 2px 20px rgba(0,0,0,.08);
 }
 .site-nav .navbar-brand-wrapper {
-    background: #1B3A6B;
-    padding: 14px 28px 14px 24px;
-    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 100%, 0 100%);
+    background: transparent;
+    padding: 8px 0;
+    clip-path: none;
     margin-right: 16px;
     transition: background .3s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.site-nav .navbar-icon {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
 }
 .site-nav .navbar-brand-text {
     font-family: 'Geist', sans-serif;
     font-weight: 800;
-    font-size: 1.35rem;
-    color: #fff;
+    font-size: 0.95rem;
+    color: #1B3A6B !important;
     letter-spacing: -0.02em;
-    line-height: 1;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 .site-nav .navbar-brand-text span { color: #93C5FD; }
 .site-nav .nav-link {
@@ -189,6 +198,46 @@
 /* mobile toggler */
 .site-nav .navbar-toggler { border-color: #ccc; }
 .site-nav .navbar-toggler-icon { filter: none; }
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+    .site-nav .navbar-brand-wrapper {
+        padding: 0;
+        margin-right: auto;
+        gap: 8px;
+    }
+    .site-nav .navbar-icon {
+        height: 32px;
+    }
+    .site-nav .navbar-brand-text {
+        font-size: 0.75rem;
+        white-space: normal;
+    }
+    .site-nav .navbar-toggler {
+        display: block !important;
+        visibility: visible !important;
+        margin-right: 12px;
+        padding: 6px 8px;
+        border: 1px solid #999;
+    }
+    .site-nav .navbar-toggler:focus {
+        box-shadow: none;
+        border-color: #1B3A6B;
+    }
+    .site-nav .nav-link {
+        padding: 12px 0 !important;
+        font-size: 0.85rem;
+    }
+    .site-nav .nav-link::after { display: none; }
+    .site-nav .btn-quote {
+        width: 100%;
+        text-align: center;
+        margin-top: 12px;
+    }
+    .site-nav .navbar-collapse {
+        padding-top: 12px;
+    }
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .site-nav .nav-link {
@@ -944,7 +993,7 @@
 <body>
 
 <!-- Topbar -->
-<div class="topbar-strip d-none d-lg-block">
+<div class="topbar-strip">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-4">
@@ -970,9 +1019,10 @@
 <!-- Navbar -->
 <nav class="site-nav navbar navbar-expand-lg py-0 pe-lg-4" id="siteNav">
     <div class="container-fluid ps-0">
-        <a href="index.html" class="navbar-brand me-0 ps-0">
-            <div class="navbar-brand-wrapper">
-                <span class="navbar-brand-text">PAI<span>.</span></span>
+        <a href="index.html" class="navbar-brand me-0 d-flex align-items-center">
+            <div class="navbar-brand-wrapper d-flex align-items-center gap-3">
+                <img src="img/icon.png" alt="Pandurang Auto Industries" class="navbar-icon">
+                <span class="navbar-brand-text">Pandurang Auto Industries</span>
             </div>
         </a>
         <button class="navbar-toggler me-3 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -1014,7 +1064,7 @@
                     </div>
                     <!-- Image side -->
                     <div class="hero-img-col">
-                        <div class="slide-bg" style="background-image:url('img/about-1.jpg');"></div>
+                        <div class="slide-bg" style="background-image:url('img/machines2.jpeg');"></div>
                         <div class="hero-img-badge">
                             <div class="badge-icon"><i class="bi bi-award-fill"></i></div>
                             <div>
@@ -1042,7 +1092,7 @@
                         </div>
                     </div>
                     <div class="hero-img-col">
-                        <div class="slide-bg" style="background-image:url('img/about-2.jpg');"></div>
+                        <div class="slide-bg" style="background-image:url('img/machines.jpeg');"></div>
                         <div class="hero-img-badge">
                             <div class="badge-icon"><i class="bi bi-layers-fill"></i></div>
                             <div>
@@ -1070,7 +1120,7 @@
                         </div>
                     </div>
                     <div class="hero-img-col">
-                        <div class="slide-bg" style="background-image:url('img/product-10.jpeg');"></div>
+                        <div class="slide-bg" style="background-image:url('img/parts2.jpeg');"></div>
                         <div class="hero-img-badge">
                             <div class="badge-icon"><i class="bi bi-tools"></i></div>
                             <div>
@@ -1156,8 +1206,8 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6" data-aos="fade-right">
                 <div class="about-img-stack">
-                    <img class="img-main" src="img/product-3.jpeg" alt="PAI Precision Machining Facility">
-                    <img class="img-accent" src="img/product-8.jpeg" alt="CNC Machined Part">
+                    <img class="img-main" src="img/product-8.jpeg" alt="PAI Precision Machining Facility">
+                    <img class="img-accent" src="img/parts.jpeg" alt="CNC Machined Part">
                     <div class="exp-pill">
                         <span class="ep-num">23+</span>
                         <span class="ep-text">Years of<br>Excellence</span>
