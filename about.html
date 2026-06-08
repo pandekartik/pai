@@ -86,6 +86,10 @@ body { color: var(--text); background: #fff; }
     .topbar-strip { font-size: 0.7rem; padding: 6px 0; }
     .topbar-strip .gap-4 { gap: 12px !important; }
 }
+@media (max-width: 576px) {
+    .customer-col { flex: 0 0 50%; max-width: 50%; }
+}
+
 @media (max-width: 767px) {
     .topbar-strip .d-flex > div:first-child span:last-child,
     .topbar-strip .d-flex > div:last-child a:last-child {
@@ -422,6 +426,10 @@ body { color: var(--text); background: #fff; }
     .overview-section, .vm-section, .materials-section, .sectors-section, .whyus-section { padding: 64px 0; }
     .customer-col { flex: 0 0 25%; max-width: 25%; }
 }
+@media (max-width: 576px) {
+    .customer-col { flex: 0 0 50%; max-width: 50%; }
+}
+
 @media (max-width: 767px) {
     .stat-item + .stat-item::before { display: none; }
 }
