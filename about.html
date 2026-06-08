@@ -323,15 +323,19 @@ body { color: var(--text); background: #fff; }
 /* ── Customers Section ── */
 .customers-section { padding: 100px 0; background: #fff; }
 .section-subtitle { font-size: 1.05rem; color: #6B7280; margin-top: 12px; }
+.customer-col {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
 .customer-logo-card {
-    padding: 16px;
+    padding: 18px;
     border-radius: 12px;
     border: 1px solid #E8EDF5;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 120px;
     aspect-ratio: 1;
     transition: transform .3s, box-shadow .3s, border-color .3s;
 }
@@ -355,6 +359,7 @@ body { color: var(--text); background: #fff; }
 @media (max-width: 991px) {
     .img-badge.exp, .img-badge.iso { display: none; }
     .overview-section, .vm-section, .materials-section, .sectors-section, .whyus-section { padding: 64px 0; }
+    .customer-col { flex: 0 0 25%; max-width: 25%; }
 }
 @media (max-width: 767px) {
     .stat-item + .stat-item::before { display: none; }
@@ -650,52 +655,52 @@ body { color: var(--text); background: #fff; }
             </div>
         </div>
         <div class="row g-4">
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/1.jpeg" alt="Customer Logo 1">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/2.jpeg" alt="Customer Logo 2">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/3.jpeg" alt="Customer Logo 3">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/4.jpeg" alt="Customer Logo 4">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/5.jpeg" alt="Customer Logo 5">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/6.jpeg" alt="Customer Logo 6">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/7.jpeg" alt="Customer Logo 7">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/8.jpeg" alt="Customer Logo 8">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/9.jpeg" alt="Customer Logo 9">
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 customer-col">
                 <div class="customer-logo-card">
                     <img src="img/clients/10.jpeg" alt="Customer Logo 10">
                 </div>
